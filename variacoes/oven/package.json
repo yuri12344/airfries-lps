@@ -11,6 +11,7 @@
     "postcss-nested": "^6.0.1"
   },
   "scripts": {
-    "build": "postcss ./src/css/wrap-tailwind..css -o ./src/css/output.css"
+    "build": "postcss ./src/css/wrap-tailwind..css -o ./src/css/output.css",
+    "build-watch": "npx tailwindcss -o src/styles/styles.css --watch"
   }
 }

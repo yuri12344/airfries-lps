@@ -36,8 +36,7 @@ const htmlContent = `
             @click="showVideo = true"
             src="./images/cover_video.png"
             alt="Video Thumbnail"
-            class="hidden object-cover w-full h-full mt-10 md:block"
-          />
+            class="hidden object-cover w-full h-full mt-10 md:block" />
           <iframe
             x-show="showVideo"
             loading="lazy"
@@ -45,12 +44,10 @@ const htmlContent = `
             class="w-full mt-10 m-auto h-[40rem] hidden md:block"
             frameborder="0"
             allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen></iframe>
         </div>
         <h1
-          class="py-2 text-center text-white rounded-b-lg md:py-4 px-7 text-1xl font-poppins bg-red-default"
-        >
+          class="py-2 text-center text-white rounded-b-lg md:py-4 px-7 text-1xl font-poppins bg-red-default">
           PROSDÓCIMO
         </h1>
       </header>
@@ -69,9 +66,9 @@ const htmlContent = `
           class="flex flex-col items-start gap-12 mx-10 mt-20 md:gap-0 md:mx-16 md:justify-around md:flex-row md:mt-28">
           <div
             class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
-            <img class="w-14" src="./images/icons/icon_arco.png" alt="Icone" />
+            <img class="w-10 md:w-14" src="./images/icons/icon_arco.png" alt="Icone" />
             <h1
-              class="mt-4 text-2xl font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
+              class="mt-4 text-base font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
               PAINEL DIGITAL
             </h1>
             <p
@@ -83,12 +80,10 @@ const htmlContent = `
 
           <div
             class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
-            <img
-              class="w-14"
-              src="./images/icons/light_icon.png"
-              alt="Icon" />
+            <img class="w-10 md:w-14" src="./images/icons/light_icon.png" alt="Icon" />
+
             <h1
-              class="mt-4 text-2xl font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
+              class="mt-4 text-base font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
               PORTA COM VISOR
             </h1>
             <p
@@ -99,9 +94,9 @@ const htmlContent = `
           </div>
           <div
             class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
-            <img class="w-14" src="./images/icons/circulacao_360_icon.png" alt="Icon" />
+            <img class="w-10 md:w-14" src="./images/icons/circulacao_360_icon.png" alt="Icon" />
             <h1
-              class="mt-4 text-2xl font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
+              class="mt-4 text-base font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
               CIRCULAÇÃO DE AR
             </h1>
             <p
@@ -114,28 +109,27 @@ const htmlContent = `
       </section>
 
       <section
-        class="flex flex-col gap-2 text-white mt-60 bg-black-default md:rounded-3xl">
+        class="flex flex-col gap-2 mt-20 text-white md:mt-60 bg-black-default md:rounded-3xl">
         <div class="grid grid-cols-2 gap-8">
           <div class="relative z-10 mt-8 ml-8 space-y-6 md:mt-16 md:ml-20">
-            <h1 class="text-base font-bold uppercase md:w-[75%] md:text-3xl font-poppins">
-              DESCUBRA A REVOLUÇÃO CULINÁRIA COM A AIRFRY OVEN DIGITAL
+            <h1 class="text-base font-bold uppercase md:w-[60%] md:text-3xl font-poppins">
+              DESCUBRA A REVOLUÇÃO CULINÁRIA COM A FRITADEIRA AIRFRY OVEN DIGITAL
             </h1>
-            <p
-              class="font-inter font-light tracking-tighter text-sm sm:text-base w-[200%] lg:w-[70%]">
-              <b class="font-bold">AirFry Oven Digital da WAP</b> - A escolha ideal para o
-              preparo de receitas dignas de um chef profissional, para toda família.
-            </p>
             <p
               class="font-inter font-light tracking-tighter text-sm sm:text-base w-[200%] lg:w-[70%]">
               A WAP combinou as funcionalidades das fritadeiras air fryer com a
               versatilidade dos fornos convencionais para mudar a forma como você cozinha
-              diariamente. Com dois andares e capacidade de 12 litros, você pode preparar
-              vários pratos, de uma só vez, para a família toda.
+              diariamente.
+            </p>
+            <p
+              class="font-inter font-light tracking-tighter text-sm sm:text-base w-[200%] lg:w-[70%]">
+              Com dois andares e temperatura ajustável de 30°C a 200°C, ela é escolha
+              ideal para preparar vários pratos, de uma só vez, para toda família.
             </p>
           </div>
           <div class="relative flex items-start justify-start w-[120%]">
             <img
-              class="absolute z-10 animation object-fill w-[2rem]  md:w-[8rem] md:left-5 left-8 animate-float"
+              class="absolute z-10 animation object-fill w-[2rem] md:w-[8rem] md:left-5 left-8 animate-float"
               src="./images/effect_imgs/effect_img_2.png"
               alt="Imagem de efeito" />
             <img
@@ -143,11 +137,11 @@ const htmlContent = `
               src="./images/effect_imgs/effect_img_4.png"
               alt="Imagem de efeito" />
             <img
-              class="absolute z-10 object-fill w-[12rem] animation top-3 md:-top-20 -left-1/2 md:-left-[12rem] md:w-[15rem] animate-float"
+              class="absolute z-10 object-fill w-[5rem] animation top-3 md:-top-20 -left-16 md:-left-[12rem] md:w-[15rem] animate-float"
               src="./images/effect_imgs/effect_img_1.png"
               alt="Imagem de efeito" />
             <img
-              class="absolute z-10 animation object-fill hidden lg:block -right-[7rem] md:right-14 top-[5rem] w-[15rem] animate-float"
+              class="absolute z-10 animation object-fill  right-[5rem] md:right-14 top-[5rem] w-[5rem] md:w-[15rem] animate-float"
               src="./images/effect_imgs/effect_img_3.png"
               alt="Imagem de efeito" />
             <img
@@ -157,13 +151,13 @@ const htmlContent = `
           </div>
         </div>
 
-        <div class="flex flex-col-reverse gap-4 px-8 pb-20 mt-10 md:mt-0 md:px-20 lg:grid lg:grid-cols-2">
-          <div class="flex items-center justify-center px-8 md:px-16 md:py-16">
+        <div
+          class="flex flex-col-reverse gap-4 px-8 pb-20 mt-10 md:mt-0 md:px-20 lg:grid lg:grid-cols-2">
+          <div class="flex items-center justify-center px-4 md:px-8 md:py-8">
             <img
               src="./images/pão_de_queijo.png"
               alt="Bandeija com alimento"
               class="object-contain w-full h-full lg:-mt-8 lg:translate-y-10 -mt-44 translate-y-44" />
-
           </div>
           <div
             class="flex flex-col items-center justify-center gap-4 mt-12 md:mt-0 font-poppins">
@@ -180,13 +174,13 @@ const htmlContent = `
           </div>
         </div>
       </section>
-      
+
       <!--Slider-->
       <section class="grid mx-5 mt-20 lg:mt-0 lg:ml-20 md:grid-cols-2">
         <div class="flex flex-col md:gap-10 md:justify-center md:ml-0">
           <div class="flex flex-col h-auto gap-3 mt-10 md:mt-0">
-            <img src="./images/icons/icon_arco.png" alt="logo" class="w-14" />
-            <h1 class="text-2xl font-black text-black-default font-poppins">
+            <img src="./images/icons/icon_arco.png" alt="logo" class="w-10 md:w-14" />
+            <h1 class="font-black md:text-2xl text-black-default font-poppins">
               10 FUNÇÕES <br />
               PRÉ-PROGRAMADAS
             </h1>
@@ -196,10 +190,10 @@ const htmlContent = `
               fryer, mais a função reaquecer.
             </p>
           </div>
-          
+
           <!--Controler desktop-->
           <div
-            class="hidden md:flex flex-col items-start justify-center h-[10rem]  rounded-l-full bg-red-default">
+            class="hidden md:flex flex-col items-start justify-center h-[10rem] rounded-l-full bg-red-default">
             <div class="flex flex-col gap-5 ml-20 text-white">
               <div class="flex flex-col text-start">
                 <h2 class="text-2xl font-bold card-title"></h2>
@@ -208,9 +202,9 @@ const htmlContent = `
               <div class="flex items-center justify-center gap-5">
                 <p class="font-bold card-counter"></p>
                 <div
-                  class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer previous"></div>
+                  class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer previous" style="background-image: url('./images/icons/left_sign.png')"></div>
                 <div
-                  class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer next"></div>
+                  class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer next" style="background-image: url('./images/icons/right_sign.png')"></div>
               </div>
             </div>
           </div>
@@ -218,11 +212,9 @@ const htmlContent = `
         <!--Images do slider-->
         <div
           class="flex flex-col items-center justify-center w-full mt-10 lg:pb-20 sm:mt-20 md:mt-20 md:-ml-10">
-          <div class="relative flex items-center justify-center h-full mr-5 md:mx-0 sm:mx-20">
-            <img
-              src="./images/slider/background_image.png"
-              class=""
-              alt="" />
+          <div
+            class="relative flex items-center justify-center h-full mr-5 md:mx-0 sm:mx-20">
+            <img src="./images/slider/background_image.png" class="" alt="" />
             <img
               alt="Imagens de alimentos"
               id="card-image"
@@ -240,9 +232,9 @@ const htmlContent = `
           <div class="flex items-center justify-center h-full mt-5">
             <p class="mr-4 font-bold card-counter"></p>
             <div
-              class="mr-2 bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 previous"></div>
+              class="mr-2 bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 previous" style="background-image: url('./images/icons/left_sign.png')"></div>
             <div
-              class="bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 next"></div>
+              class="bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 next" style="background-image: url('./images/icons/right_sign.png')"></div>
           </div>
         </div>
       </section>
@@ -252,7 +244,7 @@ const htmlContent = `
           VERSATILIDADE PARA VOCÊ EXPLORAR<br class="hidden md:block" />TODAS AS
           POSSIBILIDADES
         </h1>
-        <p class="w-11/12 mt-6 md:w-2/3 md:text-center">
+        <p class="w-11/12 mt-6 md:w-2/3 text-black-default md:text-center">
           A <b class="font-bold">Fritadeira AirFry Oven Digital da WAP</b> é a escolha
           certa para quem busca uma solução culinária saudável e eficiente. Essencial na
           cozinha moderna por sua capacidade e versatilidade, ela permite que você crie
@@ -264,44 +256,56 @@ const htmlContent = `
           class="w-full mt-16" />
       </section>
 
-      <section class="flex flex-col items-center justify-center mt-20 lg:mt-40 ">
-        <img class="hidden md:block" src="./images/mais_possibilidades_section_desktop.png" alt="">
-        <img class="md:hidden" src="./images/mais_possibilidades_section_mobile.png" alt="">
+      <section class="flex flex-col items-center justify-center mt-20 lg:mt-40">
+        <img
+          class="hidden md:block"
+          src="./images/mais_possibilidades_section_desktop.png"
+          alt="" />
+        <img
+          class="md:hidden"
+          src="./images/mais_possibilidades_section_mobile.png"
+          alt="" />
       </section>
 
       <section class="grid m-auto md:ml-10 lg:grid-cols-2">
-        <div class="flex-col hidden md:flex items-end pb-[18rem] rounded-b-full lg:bg-red-default">
+        <div
+          class="flex-col hidden md:flex items-end pb-[18rem] rounded-b-full lg:bg-red-default">
           <img
-            class="translate-y-[6rem] translate-x-7 w-[80%]"
+            class="translate-y-[6rem] hidden lg:block translate-x-7 w-[80%]"
             src="./images/produto_para_esquerda.png"
             alt="Fritadeira airfry" />
         </div>
 
         <div
-          class="flex flex-col gap-[2.5rem]  md:items-start mt-10  justify-center items-center md:ml-28 md:mt-0 lg:py-14 cards-section">
-          <div class="flex flex-col items-center justify-center text-center">
+
+          class="flex flex-col gap-[2.5rem] md:items-start mt-10 justify-center items-center md:ml-28 md:mt-0 lg:py-14 cards-section">
+          <div class="flex flex-col items-center justify-center mt-10 text-center md:text-start md:justify-start md:items-start">
             <img class="w-[3rem] md:hidden" src="./images/icons/bubble_red.png" alt="" />
             <img class="w-[3rem] hidden md:block" src="./images/icons/bubble_black.png" alt="" />
-            <h1 class="mt-3 text-2xl font-bold md:text-2xl font-poppins">
+
+            <h1 class="mt-3 text-base font-bold md:text-2xl font-poppins">
               FÁCIL LIMPEZA
             </h1>
             <p class="font-inter font-light w-[80%] md:w-[23rem] tracking-tighter mt-1">
-              As camadas antiaderentes marmorizadas Gray Stone, além de conferir charme aos acessórios, garante que os alimentos não grudem.
-              <br><br>
-              A porta com abertura lateral é removível para torna a limpeza uma tarefa rápida e descomplicada. 
-            </p>
-          </div>
-          <div class="flex flex-col items-center justify-center text-center">
-            <img class="w-[3rem] md:hidden" src="./images/icons/icon_arco.png" alt="WAP AIRFRY FAMILY PROSDÓCIMO" />
-            <img class="w-[3rem] hidden md:block" src="./images/icons/arch_black.png" alt="WAP AIRFRY FAMILY PROSDÓCIMO" />
-            <h1 class="mt-3 text-2xl font-bold md:text-2xl font-poppins">
-              PAINEL DIGITAL
-            </h1>
-            <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
-              Intuitivo, ele possui 10 funções pré-programadas para facilitar sua rotina culinária, incluindo as receitas cotidianas e a função reaquecer. 
+              As camadas antiaderentes marmorizadas Gray Stone, além de conferir charme
+              aos acessórios, garante que os alimentos não grudem.
+              <br /><br />
+              A porta com abertura lateral é removível para torna a limpeza uma tarefa
+              rápida e descomplicada. 
             </p>
           </div>
 
+          <div class="flex flex-col items-center justify-center text-center md:text-start md:justify-start md:items-start">
+            <img class="w-[3rem] md:hidden" src="./images/icons/icon_arco.png" alt="WAP AIRFRY FAMILY PROSDÓCIMO" />
+            <img class="w-[3rem] hidden md:block" src="./images/icons/arch_black.png" alt="WAP AIRFRY FAMILY PROSDÓCIMO" />
+            <h1 class="mt-3 text-base font-bold md:text-2xl font-poppins">
+              PAINEL DIGITAL
+            </h1>
+            <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
+              Intuitivo, ele possui 10 funções pré-programadas para facilitar sua rotina
+              culinária, incluindo as receitas cotidianas e a função reaquecer. 
+            </p>
+          </div>
         </div>
       </section>
 
@@ -313,10 +317,11 @@ const htmlContent = `
           </h1>
 
           <p class="mt-3 text-base w-[90%] font-light text-black font-inter md:mt-5">
-            A evolução da air fryer já chegou! Agora, o almoço em família ou o preparo das porções para o encontro entre amigos está mais fácil do que nunca.<br /><br />
+            A evolução da air fryer já chegou! Agora, o almoço em família ou o preparo das
+            porções para o encontro entre amigos está mais fácil do que nunca.<br /><br />
 
-
-            Vá além das batatas fritas! Complete sua cozinha utilizando as funções do forno e da fritadeira simultaneamente, criando receitas de dar água na boca.
+            Vá além das batatas fritas! Complete sua cozinha utilizando as funções do
+            forno e da fritadeira simultaneamente, criando receitas de dar água na boca.
           </p>
           <img
             class="left-0 w-full mt-10 sm:hidden"
@@ -326,12 +331,14 @@ const htmlContent = `
             CARDÁPIO DE CHEF
           </h1>
           <h1 class="block mt-10 text-lg font-extrabold md:hidden font-poppins">
-            CARDÁDIO DE CHEF 
+            CARDÁDIO DE CHEF
           </h1>
           <p class="mt-3 text-base w-[90%] font-light text-black font-inter md:mt-5">
-            Aprenda receitas exclusivas, assinados pelo chef Henrique Fogaça, e transforme o cardápio da sua casa com pratos simples e deliciosos.<br /><br />
+            Aprenda receitas exclusivas, assinados pelo chef Henrique Fogaça, e transforme
+            o cardápio da sua casa com pratos simples e deliciosos.<br /><br />
 
-            Compartilhando ingredientes e dicas de preparo, Fogaça trouxe receitas selecionadas para explorar ao máximo toda linha cozinha WAP.
+            Compartilhando ingredientes e dicas de preparo, Fogaça trouxe receitas
+            selecionadas para explorar ao máximo toda linha cozinha WAP.
           </p>
           <div class="mt-10">
             <span
@@ -347,34 +354,28 @@ const htmlContent = `
           alt="Henrique fogaça com a mão na cintura" />
       </section>
 
-
-
       <section
-      class="relative grid m-auto mt-20 overflow-visible text-white lg:mt-80 lg:pb-10 bg-black-default lg:rounded-3xl lg:grid-cols-2"
-    >
-      <div class="w-[85%] m-auto mt-10 lg:mx-0 lg:ml-20 lg:mt-20">
-        <h3 class="font-light font-poppin text-[1.25rem] lg:text-[2.5rem]">
-          CIRCULAÇÃO DE AR
-        </h3>
-        <h1
-          class="lg:text-[5.625rem] -mt-4 lg:-mt-8 text-[2.8rem] font-bold font-poppins"
-        >
-          EM 360°
-        </h1>
-        <p
-          class="font-light lg:text-[1.25rem] w-[80%] md:w-[90%] tracking-tighter font-inter"
-        >
-          A circulação de ar quente em 360° proporciona mais agilidade e
-          eficiência no preparo, eliminando o óleo em excesso, proporcionando
-          pratos mais saudáveis.
-        </p>
-      </div>
-      <img
-        class="m-auto mt-10 mb-[-10%] lg:mb-0 w-[18rem] lg:w-[30rem] lg:-mt-40"
-        src="./images/circulacao_360.png"
-        alt="Circulação de ar 360 graus"
-      />
-    </section>
+        class="relative grid m-auto mt-20 overflow-visible text-white lg:mt-80 lg:pb-10 bg-black-default lg:rounded-3xl lg:grid-cols-2">
+        <div class="w-[85%] m-auto mt-10 lg:mx-0 lg:ml-20 lg:mt-20">
+          <h3 class="font-light font-poppin text-[1.25rem] lg:text-[2.5rem]">
+            CIRCULAÇÃO DE AR
+          </h3>
+          <h1
+            class="lg:text-[5.625rem] -mt-4 lg:-mt-8 text-[2.8rem] font-bold font-poppins">
+            EM 360°
+          </h1>
+          <p
+            class="font-light lg:text-[1.25rem] w-[80%] md:w-[90%] tracking-tighter font-inter">
+            A tecnologia de circulação de ar em 360° garante um cozimento uniforme do
+            alimento, deixando-o crocante por fora e macio por dentro, além de eliminar o
+            óleo em excesso, proporcionando pratos mais saudáveis. 
+          </p>
+        </div>
+        <img
+          class="m-auto mt-10 mb-[-10%] lg:mb-0 w-[18rem] lg:w-[30rem] lg:-mt-40"
+          src="./images/circulacao_360.png"
+          alt="Circulação de ar 360 graus" />
+      </section>
 
       <section class="grid m-auto -mt-5 lg:grid-cols-2">
         <div class="flex flex-col pb-20 rounded-b-full lg:bg-red-default">
@@ -387,9 +388,7 @@ const htmlContent = `
             <p
               class="lg:text-white mb-4 text-black font-inter md:pr-5 md:pl-5 font-light tracking-tighter w-[80%] md:w-[26rem]">
               A Fritadeira Elétrica AirFry Oven da WAP é potente e espaçosa, ideal para
-              preparar alimentos maiores e em grandes quantidades. A Fritadeira Elétrica
-              AirFry Oven da WAP é potente e espaçosa, ideal para preparar alimentos
-              maiores e em grandes quantidades.
+              preparar alimentos maiores e em grandes quantidades.
               <b class="font-bold">Quer ver exemplos?</b>
             </p>
             <p
@@ -399,16 +398,15 @@ const htmlContent = `
               descomplicada.
             </p>
           </div>
-          <img class="hidden px-10 md:block" src="./images/produto_com_batata.png" alt="Fritadeira airfry"/>
-          <img class="md:hidden" src="./images/cesto_com_alimento.png" alt="Fritadeira airfry"/>
-
+          <img class="hidden px-10 lg:block" src="./images/produto_com_batata.png" alt="Fritadeira airfry"/>
+          <img class="lg:hidden" src="./images/cesto_com_alimento.png" alt="Fritadeira airfry"/>
         </div>
 
         <div
-          class="flex flex-col gap-[2.5rem] items-start ml-5 md:mt-14 md:ml-20 lg:py-14 cards-section">
+          class="flex flex-col gap-[2.5rem] md:items-start  ml-5 md:mt-14 md:ml-20 lg:py-14 cards-section">
           <div class="">
-            <img class="w-[3rem]" src="./images/icons/timer_icon.png" alt="" />
-            <h1 class="mt-3 text-2xl font-bold md:text-2xl font-poppins">
+            <img class="w-10 md:w-14" src="./images/icons/timer_icon.png" alt="" />
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">
               TIMER DE 120 MIN
             </h1>
             <p class="font-inter font-light w-[80%] md:w-[23rem] tracking-tighter mt-1">
@@ -419,10 +417,10 @@ const htmlContent = `
 
           <div>
             <img
-              class="w-[3rem]"
+              class="w-10 md:w-14"
               src="./images/icons/temperature_icon.png"
               alt="WAP AIRFRY FAMILY PROSDÓCIMO" />
-            <h1 class="mt-3 text-2xl font-bold md:text-2xl font-poppins">
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">
               TEMPERATURA DE ATÉ 200º C
             </h1>
             <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
@@ -432,10 +430,10 @@ const htmlContent = `
           </div>
 
           <div>
-            <img class="w-[3rem]" src="./images/icons/power_icon.png" alt="" />
-            <h1 class="mt-3 text-2xl font-bold md:text-2xl font-poppins">
-              SEGURANÇA NA ROTINA
-            </h1>
+            <img class="w-10 md:w-14" src="./images/icons/power_icon.png" alt="" />
+
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">SEGURANÇA NA ROTINA</h1>
+
             <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
               Ao fim do tempo selecionado no timer, a fritadeira desliga automaticamente,
               emitindo um aviso sonoro. 
@@ -443,10 +441,8 @@ const htmlContent = `
           </div>
 
           <div>
-            <img class="w-[3rem]" src="./images/icons/alca_icon.png" alt="" />
-            <h1 class="mt-3 text-2xl font-bold md:text-2xl font-poppins">
-              PORTA REMOVÍVEL
-            </h1>
+            <img class="w-10 md:w-14" src="./images/icons/alca_icon.png" alt="" />
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">PORTA REMOVÍVEL</h1>
             <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
               Ao mover a trava, pressione o botão para retirar o cesto, facilitando a
               utilização e a limpeza interna da air fryer. 
@@ -457,33 +453,32 @@ const htmlContent = `
 
       <section class="grid m-auto lg:grid-cols-2">
         <div
-          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 gap-y-20 lg:bg-white bg-black-default">
+          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 gap-y-20 ">
           <div
             class="flex flex-col items-center justify-center text-center lg:items-start card">
-            <img class="w-12 h-12" src="./images/icons/lampada.png" alt="Icone lâmpada" />
-            <h1
-              class="w-full mt-5 font-bold text-white uppercase md:text-start md:text-2xl lg:text-black-default font-poppins">
+
+            <img class="hidden w-10 md:w-14 md:block" src="./images/icons/lampada.png" alt="Icone lâmpada" />
+            <img class="w-10 md:w-14 md:hidden" src="./images/icons/light_icon.png" alt="Icone lâmpada" />
+            <h1 class="w-full mt-5 font-bold uppercase md:text-start md:text-2xl text-black-default font-poppins">
               PORTA COM VISOR E LUZ INTERNA
             </h1>
             <p
-              class="font-inter text-white md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
+              class="font-inter  md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
               A porta com abertura lateral, equipada com visor e luz interna permite que
               você acompanhe o progresso de suas refeições sem abrir a porta, mantendo o
-              calor interno.  
+              calor interno.
             </p>
           </div>
           <div
             class="flex flex-col items-center justify-center text-center lg:items-start card">
-            <img
-              class="w-12 h-12"
-              src="./images/icons/lava_louca.png"
-              alt="Icone lava louça" />
+            <img class="hidden w-10 md:block md:w-14" src="./images/icons/lava_louca.png" alt="Icone lava louça" />
+            <img class="w-10 md:hidden md:w-14" src="./images/icons/lavalouca_red.png" alt="Icone lava louça" />
             <h1
-              class="w-full mt-5 font-bold text-white uppercase md:text-start md:text-2xl lg:text-black-default font-poppins">
+              class="w-full mt-5 font-bold uppercase md:text-start md:text-2xl text-black-default font-poppins">
               USE NA LAVA-LOUÇAS
             </h1>
             <p
-              class="font-inter text-white md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
+              class="font-inter  md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
               Após o uso, você pode higienizar os acessórios da Fritadeira Elétrica AirFry
               Oven da WAP na lava-louça de forma prática.  
             </p>
@@ -515,6 +510,8 @@ const htmlContent = `
     </div>
   </main>
 </html>
+
     `;
 let iframe = document.getElementById("product-iframe-page");
 iframe.setAttribute("srcdoc", htmlContent);
+    

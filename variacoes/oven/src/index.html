@@ -87,7 +87,7 @@
             class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
             <img
               class="w-14"
-              src="./images/icons/icon_temperature_measure.png"
+              src="./images/icons/light_icon.png"
               alt="Icon" />
             <h1
               class="mt-4 text-2xl font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
@@ -101,7 +101,7 @@
           </div>
           <div
             class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
-            <img class="w-14" src="./images/icons/icon_energy_power.png" alt="Icon" />
+            <img class="w-14" src="./images/icons/circulacao_360_icon.png" alt="Icon" />
             <h1
               class="mt-4 text-2xl font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
               CIRCULAÇÃO DE AR
@@ -116,7 +116,7 @@
       </section>
 
       <section
-        class="flex flex-col gap-2 mt-40 text-white md:pb-20 bg-black-default md:rounded-3xl">
+        class="flex flex-col gap-2 mt-40 text-white bg-black-default md:rounded-3xl">
         <div class="grid grid-cols-2 gap-8">
           <div class="relative z-10 mt-8 ml-8 space-y-6 md:mt-16 md:ml-20">
             <h1 class="text-base font-bold uppercase md:w-[75%] md:text-3xl font-poppins">
@@ -155,16 +155,18 @@
               alt="Imagem de efeito" />
             <img
               src="./images/produto_com_alimento.png"
-              class="mr-0 -translate-y-[2rem] w-[14rem] -translate-x-[1rem] sm:-translate-y-[5rem] md:-translate-y-[6rem] md:translate-x-[0rem] md:mr-5 md:w-full"
+              class="mr-0 -translate-y-[2rem] w-[14rem] -translate-x-[1rem] sm:-translate-y-[2rem] md:-translate-y-[10rem] md:translate-x-[0rem] md:mr-5 md:w-full"
               alt="" />
           </div>
         </div>
-        <div class="flex flex-col-reverse gap-4 px-8 md:px-20 sm:grid sm:grid-cols-2">
+
+        <div class="flex flex-col-reverse gap-4 px-8 pb-20 mt-10 md:px-20 lg:grid lg:grid-cols-2">
           <div class="flex items-center justify-center px-8 md:px-16 md:py-16">
             <img
               src="./images/pão_de_queijo.png"
-              alt="Bandeija de pão de queijo"
-              class="object-contain w-full h-full -mt-8 translate-y-10" />
+              alt="Bandeija com alimento"
+              class="object-contain w-full h-full lg:-mt-8 lg:translate-y-10 -mt-44 translate-y-44" />
+
           </div>
           <div
             class="flex flex-col items-center justify-center gap-4 mt-12 md:mt-0 font-poppins">
@@ -181,25 +183,27 @@
           </div>
         </div>
       </section>
-
-      <section class="grid sm:mt-20 md:grid-cols-2">
-        <div class="flex flex-col mx-5 md:gap-10 md:justify-center md:ml-20">
-          <div class="flex flex-col h-auto gap-3 mt-10 sm:mt-20 md:mt-0">
+      
+      <!--Slider-->
+      <section class="grid mx-5 mt-20 lg:mt-0 lg:ml-20 md:grid-cols-2">
+        <div class="flex flex-col md:gap-10 md:justify-center md:ml-0">
+          <div class="flex flex-col h-auto gap-3 mt-10 md:mt-0">
             <img src="./images/icons/icon_arco.png" alt="logo" class="w-14" />
             <h1 class="text-2xl font-black text-black-default font-poppins">
               10 FUNÇÕES <br />
               PRÉ-PROGRAMADAS
             </h1>
             <p
-              class="text-base tracking-tighter text-black-default font-light font-inter w-[80%]">
+              class="text-base tracking-tighter text-black-default font-light font-inter lg:w-[80%] w-[70%]">
               Com 10 funções pré-programadas, incluindo as receitas clássicas de air
               fryer, mais a função reaquecer.
             </p>
           </div>
-
+          
+          <!--Controler desktop-->
           <div
-            class="hidden md:flex flex-col items-center justify-center h-[15rem] rounded-l-full bg-red-default">
-            <div class="flex flex-col gap-5 mr-20 text-white">
+            class="hidden md:flex flex-col items-start justify-center h-[10rem]  rounded-l-full bg-red-default">
+            <div class="flex flex-col gap-5 ml-20 text-white">
               <div class="flex flex-col text-start">
                 <h2 class="text-2xl font-bold card-title"></h2>
                 <p class="text-base card-description font-poppins"></p>
@@ -214,36 +218,34 @@
             </div>
           </div>
         </div>
-
+        <!--Images do slider-->
         <div
-          class="flex flex-col mt-8 items-center justify-center w-full sm:h-[26rem] md:h-[45rem] md:-ml-24">
-          <div class="relative flex items-center justify-center w-full h-full">
+          class="flex flex-col items-center justify-center w-full mt-10 lg:pb-20 sm:mt-20 md:mt-20 md:-ml-10">
+          <div class="relative flex items-center justify-center h-full mr-5 md:mx-0 sm:mx-20">
             <img
               src="./images/slider/background_image.png"
-              class="px-8 sm:px-16 w-[42rem]"
+              class=""
               alt="" />
             <img
               alt="Imagens de alimentos"
               id="card-image"
-              class="absolute px-10 sm:px-20 md:px-2 z-10 mt-10 w-[33rem] mb-10 transition-opacity duration-500 rounded-3xl" />
+              class="absolute z-10 px-2 mt-10 mb-10 transition-opacity duration-500 rounded-3xl" />
           </div>
         </div>
-
-        <!--Slider controler mobile section-->
+        <!--Controler mobile-->
         <div
-          class="grid items-center justify-center grid-cols-2 py-10 mx-5 mt-16 text-white rounded-full md:hidden bg-red-default">
-          <div class="flex flex-col items-center justify-center h-full">
+          class="grid items-center justify-center grid-cols-2 py-8 mt-10 text-white rounded-full md:hidden bg-red-default">
+          <div class="flex flex-col items-start justify-start h-full">
             <h2
-              class="text-black font-poppins text-2xl card-title font-bold leading-[120.5%] uppercase"></h2>
-            <p class="text-1xl card-description font-inter"></p>
+              class="text-black font-poppins ml-5 text-lg card-title font-bold leading-[120.5%] uppercase"></h2>
+            <p class="ml-5 text-base card-description font-inter"></p>
           </div>
-          <div class="flex items-center justify-center h-full">
+          <div class="flex items-center justify-center h-full mt-5">
             <p class="mr-4 font-bold card-counter"></p>
             <div
-              class="w-10 h-10 mr-2 bg-center bg-no-repeat bg-cover cursor-pointer previous"></div>
-            <!-- Adicionei uma margem à direita no botão anterior -->
+              class="mr-2 bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 previous"></div>
             <div
-              class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer next"></div>
+              class="bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 next"></div>
           </div>
         </div>
       </section>
@@ -265,106 +267,9 @@
           class="w-full mt-16" />
       </section>
 
-      <section class="flex flex-col mt-20 md:mt-48">
-        <h1 class="px-5 text-lg text-center md:text-4xl font-poppins w-max">
-          CONJUNTO COMPLETO DE POSSIBILIDADES
-        </h1>
-        <p
-          class="px-5 mt-2 text-4xl font-bold text-center md:text-6xl w-max font-poppins">
-          + POSSIBILIDADES
-        </p>
-        <div
-          class="w-full px-4 md:px-16 h-[70vw] md:h-[45rem] mt-[45vw] md:mt-[32rem] bg-black-default md:rounded-3xl relative">
-          <img
-            src="./images/produto_desmontado.png"
-            alt="Exposição de produtos"
-            class="w-full -mt-[30rem] hidden md:block" />
-          <img
-            src="./images/produto_desmontado_mobile.png"
-            alt="Exposição de produtos"
-            class="w-full -mt-[40vw] md:-mt-[35rem] md:hidden" />
-          <div
-            class="absolute -mt-[40vw] md:-mt-[35rem] top-0 md:top-[10%] left-[16%] md:left-[18%]">
-            <h2 class="text-sm font-bold md:text-2xl font-poppins">PORTA REMOVÍVEL</h2>
-            <p class="text-xs leading-tight md:mt-2 md:text-lg">
-              Para facilitar sua limpeza
-            </p>
-          </div>
-          <div
-            class="absolute flex flex-col items-end md:items-start -mt-[40vw] md:-mt-[35rem] top-0 md:top-[33%] right-[16%] md:left-[73%]">
-            <h2 class="text-sm font-bold text-end md:text-start md:text-2xl font-poppins">
-              CESTO
-            </h2>
-            <p class="hidden text-lg leading-tight md:block md:text-start md:mt-2">
-              O cesto removível com 4,5 litros é perfeito para porções generosas.
-            </p>
-            <p
-              class="w-2/3 text-xs leading-tight md:hidden md:text-lg text-end md:text-start md:mt-2">
-              Cesto removível com 4,5 litros.
-            </p>
-          </div>
-          <div
-            class="absolute -mt-[40vw] md:-mt-[35rem] bottom-[10%] md:bottom-[33%] right-[61%] md:right-[66%] text-white flex flex-col items-end">
-            <h2 class="text-sm font-bold md:text-2xl font-poppins">BANDEJA COLETORA</h2>
-            <p class="w-[80%] text-xs leading-tight md:mt-2 md:text-lg text-end">
-              A bandeja coletora de gordura assegura que suas refeições sejam tão
-              saudáveis quanto deliciosas.
-            </p>
-          </div>
-          <div
-            class="absolute -mt-[40vw] md:-mt-[35rem] bottom-[6%] md:bottom-[11%] left-[52%] md:left-[62%] text-white">
-            <h2 class="text-sm font-bold md:text-2xl font-poppins">
-              BANDEJA ANTIADERENTE
-            </h2>
-            <p class="text-xs leading-tight md:mt-2 md:text-lg w-[80%]">
-              As duas bandejas com camada antiaderente oferecem versatilidade na
-              preparação dos pratos.
-            </p>
-          </div>
-        </div>
-        <div class="grid-cols-2 px-8 mt-16 md:mt-0 md:grid">
-          <img
-            src="./images/produto_fundo_vermelho.png"
-            alt="Imagem do produto"
-            class="hidden w-full md:block" />
-          <div
-            class="flex flex-col items-center justify-center w-full h-full md:items-start">
-            <img
-              src="./images/icons/bolhas.png"
-              alt="Icone de bolhas"
-              class="hidden object-contain w-14 aspect-square md:block" />
-            <img
-              src="./images/icons/bolhas_vermelho.png"
-              alt="Icone de bolhas"
-              class="object-contain w-14 aspect-square md:hidden" />
-            <h2 class="mt-4 text-2xl font-bold md:text-3xl font-poppins">
-              FÁCIL LIMPEZA
-            </h2>
-            <p class="mt-4 leading-tight text-center md:text-start">
-              As camadas antiaderentes marmorizadas Gray Stone, além de conferir charme
-              aos acessórios, garante que os alimentos não grudem.
-            </p>
-            <p class="mt-4 leading-tight text-center md:text-start">
-              A porta com abertura lateral é removível para torna a limpeza uma tarefa
-              rápida e descomplicada.
-            </p>
-            <img
-              src="./images/icons/icon_arco_preto.png"
-              alt="Icone de bolhas"
-              class="hidden object-contain mt-20 w-14 aspect-square md:block" />
-            <img
-              src="./images/icons/icon_arco.png"
-              alt="Icone de bolhas"
-              class="object-contain mt-20 w-14 aspect-square md:hidden" />
-            <h2 class="mt-4 text-2xl font-bold md:text-3xl font-poppins">
-              PAINEL DIGITAL
-            </h2>
-            <p class="mt-4 leading-tight text-center md:text-start">
-              Intuitivo, ele possui 10 funções pré-programadas para facilitar sua rotina
-              culinária, incluindo as receitas cotidianas e a função reaquecer. 
-            </p>
-          </div>
-        </div>
+      <section class="flex flex-col items-center justify-center mt-20 lg:mt-40 ">
+        <img class="hidden md:block" src="./images/mais_possibilidades_section_desktop.png" alt="">
+        <img class="md:hidden" src="./images/mais_possibilidades_section_mobile.png" alt="">
       </section>
 
       <section class="grid ml-5 mt-14 md:mt-32 md:mx-0 lg:grid-cols-2">
@@ -375,14 +280,10 @@
           </h1>
 
           <p class="mt-3 text-base w-[90%] font-light text-black font-inter md:mt-5">
-            É possível preparar frituras saborosas, crocantes por fora e macias por
-            dentro, com menos gordura! Com a Fritadeira Elétrica WAP AirFry Family 4L,
-            você chega no ponto ideal das receitas sem utilizar óleo ou manteiga no
-            preparo<br /><br />
+            A evolução da air fryer já chegou! Agora, o almoço em família ou o preparo das porções para o encontro entre amigos está mais fácil do que nunca.<br /><br />
 
-            Sua tecnologia permite fritar os alimentos com ar quente. A Air Fryer envolve
-            a comida, aquecendo e cozinhando internamente, sem usar o óleo, proporcionando
-            ótimos resultados.
+
+            Vá além das batatas fritas! Complete sua cozinha utilizando as funções do forno e da fritadeira simultaneamente, criando receitas de dar água na boca.
           </p>
           <img
             class="left-0 w-full mt-10 sm:hidden"
@@ -395,11 +296,9 @@
             CARDÁDIO DE CHEF HENRIQUE FOGAÇA
           </h1>
           <p class="mt-3 text-base w-[90%] font-light text-black font-inter md:mt-5">
-            Desperte seu paladar para uma rotina alimentar mais saudável e de dar água na
-            boca com receitas assinadas pelo Chef Henrique Fogaça.<br /><br />
+            Aprenda receitas exclusivas, assinados pelo chef Henrique Fogaça, e transforme o cardápio da sua casa com pratos simples e deliciosos.<br /><br />
 
-            De pratos principais a sobremesa, o chef irá revelar como usar todo o
-            potencial da linha de produtos de cozinha da WAP em suas receitas.
+            Compartilhando ingredientes e dicas de preparo, Fogaça trouxe receitas selecionadas para explorar ao máximo toda linha cozinha WAP.
           </p>
           <div class="mt-10">
             <span
@@ -443,34 +342,37 @@
       </section> -->
 
       <section
-        class="relative grid m-auto mt-20 overflow-visible text-white lg:mt-80 bg-black-default lg:rounded-3xl lg:grid-cols-2">
-        <div class="w-[85%] m-10 lg:mx-0 lg:ml-20 lg:my-16">
-          <h3
-            class="font-light font-poppin text-[1.25rem] lg:text-[2.5rem] leading-tight">
-            CIRCULAÇÃO DE AR
-          </h3>
-          <h1
-            class="lg:text-[5.625rem] leading-none text-[2.8rem] font-bold font-poppins">
-            EM 360°
-          </h1>
-          <p
-            class="font-light lg:text-[1.25rem] w-full mt-4 md:w-[90%] tracking-tighter font-inter">
-            A tecnologia de circulação de ar em 360° garante um cozimento uniforme do
-            alimento, deixando-o crocante por fora e macio por dentro, além de eliminar o
-            óleo em excesso, proporcionando pratos mais saudáveis. 
-          </p>
-        </div>
-        <img
-          class="md:mt-10 w-full -mb-[20%] translate-y-[3%] md:translate-y-0 lg:mb-0 object-contain h-[18rem] lg:h-auto lg:-mt-40"
-          src="./images/produto_circulacao.png"
-          alt="Circulação de ar 360 graus" />
-      </section>
+      class="relative grid m-auto mt-20 overflow-visible text-white lg:mt-80 lg:pb-10 bg-black-default lg:rounded-3xl lg:grid-cols-2"
+    >
+      <div class="w-[85%] m-auto mt-10 lg:mx-0 lg:ml-20 lg:mt-28">
+        <h3 class="font-light font-poppin text-[1.25rem] lg:text-[2.5rem]">
+          CIRCULAÇÃO DE AR
+        </h3>
+        <h1
+          class="lg:text-[5.625rem] -mt-4 lg:-mt-8 text-[2.8rem] font-bold font-poppins"
+        >
+          EM 360°
+        </h1>
+        <p
+          class="font-light lg:text-[1.25rem] w-[80%] md:w-[90%] tracking-tighter font-inter"
+        >
+          A circulação de ar quente em 360° proporciona mais agilidade e
+          eficiência no preparo, eliminando o óleo em excesso, proporcionando
+          pratos mais saudáveis.
+        </p>
+      </div>
+      <img
+        class="m-auto mt-10 mb-[-10%] lg:mb-0 w-[18rem] lg:w-[30rem] lg:-mt-40"
+        src="./images/circulacao_360.png"
+        alt="Circulação de ar 360 graus"
+      />
+    </section>
 
       <section class="grid m-auto -mt-5 lg:grid-cols-2">
         <div class="flex flex-col pb-20 rounded-b-full lg:bg-red-default">
           <div class="flex flex-col gap-8 mx-5 lg:m-auto md:justify-center">
             <h1
-              class="mt-20 text-2xl font-bold text-black md:mt-20 md:pl-5 lg:text-white font-poppins">
+              class="mt-40 text-2xl font-bold text-black md:pl-5 lg:text-white font-poppins">
               MAIS POSSIBILIDADES,<br />
               SEM PERDER O SABOR
             </h1>

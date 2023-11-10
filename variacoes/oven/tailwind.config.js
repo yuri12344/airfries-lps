@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: ["./src/**/*.html", "./src/**/*.js"],
   theme: {
     extend: {
@@ -23,6 +24,10 @@ module.exports = {
       },
       maxWidth: {
         vtex: "74rem",
+      },
+      backgroundImage: {
+        leftSign: "url('.../images/icons/left_sign.png')",
+        rightSign: "url('../images/icons/right_sign.png')",
       },
     },
   },

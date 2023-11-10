@@ -6,11 +6,11 @@ class ImageSlider {
     this.activeIndex = 0;
     this.autoplaySpeed = autoplaySpeed;
     this.cardImage = document.getElementById('card-image');
-    this.cardTitle = document.getElementById('card-title');
-    this.cardDescription = document.getElementById('card-description');
-    this.cardCounter = document.getElementById('card-counter');
-    this.nextButton = document.getElementById('next');
-    this.previousButton = document.getElementById('previous');
+    this.cardTitles = document.querySelectorAll('.card-title');
+    this.cardDescriptions = document.querySelectorAll('.card-description');
+    this.cardCounter = document.querySelectorAll('.card-counter');
+    this.nextButton = document.querySelectorAll('.next');
+    this.previousButton = document.querySelectorAll('.previous');
     this.touchStartX = 0;
     this.touchEndX = 0;
     this.threshold = 50;
@@ -23,10 +23,17 @@ class ImageSlider {
   }
   updateCardContent(index) {
     const cardData = this.imagesData[index];
-    this.cardCounter.textContent = `${index + 1} de ${this.imagesData.length}`;
+    this.cardCounter.forEach(counterElement => {
+      counterElement.textContent = `${index + 1} de ${this.imagesData.length}`;
+    });
     this.cardImage.src = cardData.url;
-    this.cardTitle.textContent = cardData.title;
-    this.cardDescription.textContent = cardData.description;
+    console.log(this.button)
+    this.cardTitles.forEach(titleElement => {
+      titleElement.textContent = cardData.title;
+    });
+    this.cardDescriptions.forEach(descriptionElement => {
+      descriptionElement.textContent = cardData.description;
+    });
   }
   updateCard(index) {
     this.cardImage.classList.remove('opacity-100');
@@ -38,15 +45,19 @@ class ImageSlider {
     }, 150);
   }
   attachEventListeners() {
-    this.nextButton.addEventListener('click', () => {
-      this.activeIndex = (this.activeIndex + 1) % this.imagesData.length;
-      this.updateCard(this.activeIndex);
-      this.pauseAutoplay();
+    this.nextButton.forEach(button => {
+      button.addEventListener('click', () => {
+        this.activeIndex = (this.activeIndex + 1) % this.imagesData.length;
+        this.updateCard(this.activeIndex);
+        this.pauseAutoplay();
+      });
     });
-    this.previousButton.addEventListener('click', () => {
-      this.activeIndex = (this.activeIndex - 1 + this.imagesData.length) % this.imagesData.length;
-      this.updateCard(this.activeIndex);
-      this.pauseAutoplay();
+    this.previousButton.forEach(button => {
+      button.addEventListener('click', () => {
+        this.activeIndex = (this.activeIndex - 1 + this.imagesData.length) % this.imagesData.length;
+        this.updateCard(this.activeIndex);
+        this.pauseAutoplay();
+      });
     });
     this.cardImage.addEventListener('touchstart', (e) => {
       this.touchStartX = e.changedTouches[0].screenX;
@@ -107,3 +118,16 @@ const imagesData = [
 const autoPlaySpeed = 5000; 
 const pauseDuration = 5000; 
 const slider = new ImageSlider(imagesData, autoPlaySpeed, pauseDuration);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Seleciona todos os botões 'next' e aplica o estilo
+  document.querySelectorAll('.next').forEach(button => {
+    button.style.backgroundImage = "url('./images/icons/right_sign.png')";
+  });
+
+  // Seleciona todos os botões 'previous' e aplica o estilo
+  document.querySelectorAll('.previous').forEach(button => {
+    button.style.backgroundImage = "url('./images/icons/left_sign.png')";
+  });
+});

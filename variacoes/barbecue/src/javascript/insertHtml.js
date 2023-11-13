@@ -1,4 +1,5 @@
-const htmlContent = `<!DOCTYPE html>
+const htmlContent = `
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" http-equiv="refresh" content="" />
@@ -56,7 +57,7 @@ const htmlContent = `<!DOCTYPE html>
         <div
           class="flex flex-col items-start gap-20 mx-10 mt-20 md:gap-0 md:mx-16 md:justify-around md:flex-row md:mt-28">
           <div
-            class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
+            class="flex flex-col items-center justify-end w-full text-center md:mx-5 md:w-1/4">
             <img class="w-14" src="./images/icons/icon_arco.png" alt="Icone" />
             <h1
               class="mt-4 text-xl font-black leading-snug text-center text-black uppercase md:text-lg font-poppins">

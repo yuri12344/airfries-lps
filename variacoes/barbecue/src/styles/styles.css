@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -680,6 +680,10 @@ video {
   margin-bottom: -10%;
 }
 
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
@@ -780,8 +784,8 @@ video {
   margin-top: 2rem;
 }
 
-.ml-16 {
-  margin-left: 4rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -869,6 +873,10 @@ video {
   width: 3.5rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -921,6 +929,10 @@ video {
   width: 8rem;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -928,22 +940,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .max-w-\[50\%\] {
@@ -1016,6 +1012,10 @@ video {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1127,6 +1127,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .bg-black-default {
@@ -1579,6 +1583,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1671,6 +1679,10 @@ video {
     min-width: 50%;
   }
 
+  .md\:min-w-\[80\%\] {
+    min-width: 80%;
+  }
+
   .md\:-translate-y-\[6rem\] {
     --tw-translate-y: -6rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1723,6 +1735,11 @@ video {
 
   .md\:rounded-3xl {
     border-radius: 1.5rem;
+  }
+
+  .md\:border-red-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(252 165 165 / var(--tw-border-opacity));
   }
 
   .md\:bg-black-default {
@@ -1889,6 +1906,10 @@ video {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:grid {
+    display: grid;
   }
 
   .lg\:hidden {

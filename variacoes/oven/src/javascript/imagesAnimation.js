@@ -20,6 +20,7 @@ function handleAnimation(scrollY) {
     } else if (element.classList.contains("animate-float-reverse")) {
       newTransform = Math.cos(scrollY / 100 + index) * widerFactor * 10;
     }
+    
 
     element.style.transform = `translateY(${newTransform}px)`;
   });

@@ -29,6 +29,7 @@ module.exports = {
         leftSign: "url('.../images/icons/left_sign.png')",
         rightSign: "url('../images/icons/right_sign.png')",
       },
+      
     },
   },
   plugins: [],

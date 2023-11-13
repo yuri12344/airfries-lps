@@ -11,3 +11,8 @@ body,
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.text-outline {
+  -webkit-text-stroke: 1px white; /* width and color of stroke */
+  color: transparent; /* transparent text color */
+}

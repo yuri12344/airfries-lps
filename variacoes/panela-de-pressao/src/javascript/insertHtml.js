@@ -131,7 +131,7 @@ const htmlContent = `
           class="absolute object-fill w-[5rem] animation top-3 md:-top-20 -left-16 md:-left-[5rem] md:w-[15rem] animate-float"
           src="./images/effect_imgs/effect_img_1.png"
           alt="Imagem de efeito" />
-          <h1 class="uppercase z-10 font-bold text-3xl lg:text-[3.5rem] leading-tight md:text-3xl font-poppins">
+          <h1 class="uppercase z-10 font-bold lg:text-[3.5rem] leading-tight  font-poppins">
             6 LITROS
           </h1>
           <p class="z-10 text-base font-light lg:text-3xl font-poppins">
@@ -254,7 +254,7 @@ const htmlContent = `
       
       <section class="grid mx-5 mt-20 lg:grid-cols-2 md:mx-20">
         <div class="flex flex-col justify-center w-[90%] gap-5 text-black-default">
-          <h1 class="md:text-4xl text-2xl w-[90%] font-bold font-poppins">CONHEÇA A PANELA DE PRESSÃO ELÉTRICA PROSDÓCIMO WAP</h1>
+          <h1 class="md:text-3xl text-2xl w-[90%] font-bold font-poppins">CONHEÇA A PANELA DE PRESSÃO ELÉTRICA PROSDÓCIMO WAP</h1>
           <p class="w-[90%]">A programação de funções da panela elétrica de pressão é simples, com funções descomplicadas, proporcionando uma experiência completa aos usuários.</p>
           <h1 class="text-2xl font-bold font-poppins">FUNÇÕES PARA FACILITAR SUA ROTINA</h1>
           <p class="w-[90%]">
@@ -483,6 +483,7 @@ const htmlContent = `
   <script src="./javascript/imagesAnimation.js"></script>
   <script src="./javascript/senders.js"></script>
   <script src="./javascript/productInspect.js"></script>
+  <script src= "https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 </html>
 
     `;

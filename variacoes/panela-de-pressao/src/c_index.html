@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" http-equiv="refresh" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Panela de Pressão</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="stylesheet" href="styles/leafsAnimation.css" />
+    <!-- Link para o CSS do Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <main class="m-auto max-w-vtex">
+    <div class="overflow-x-hidden">
+      <header class="flex flex-col items-center">
+        <div class="w-full" x-data="{ showVideo: false }">
+          <img
+            x-show="!showVideo"
+            @click="showVideo = true"
+            src="./images/cover_video.png"
+            alt="Video Thumbnail"
+            class="hidden object-cover w-full h-full mt-10 md:block" />
+          <iframe
+            x-show="showVideo"
+            loading="lazy"
+            :src="showVideo ? 'https://www.youtube.com/embed/FkZ0bcu_Hwk?enablejsapi=1&autoplay=1' : ''"
+            class="w-full mt-10 m-auto h-[40rem] hidden md:block"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+        <h1
+          class="py-2 text-center text-white rounded-b-lg md:py-4 px-7 text-1xl font-poppins bg-red-default">
+          PROSDÓCIMO
+        </h1>
+      </header>
+
+      <section class="flex flex-col items-center mt-14 md:mt-36">
+        <img
+          src="./images/fogaca_apontando_dedo_desktop.png"
+          class="hidden w-full px-10 md:block"
+          alt="Henrique Fogaca apontando dedo para o produto" />
+        <img
+          src="./images/fogaca_apontando_dedo_mobile.png"
+          class="w-full px-6 m-auto md:hidden"
+          alt="Henrique Fogaca apontando dedo para o produto" />
+
+        <div
+          class="flex flex-col items-start gap-12 mx-10 mt-20 md:gap-0 md:mx-16 md:justify-around md:flex-row md:mt-28">
+          <div
+            class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
+            <img class="w-10 md:w-14" src="./images/icons/lock_red.png" alt="Icone" />
+            <h1
+              class="mt-4 text-base font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
+              10 DISPOSITIVOS DE <br> SEGURANÇA
+            </h1>
+            <p
+              class="mt-4 text-base font-light leading-5 text-center text-black font-inter">
+              Os dispositivos de segurança da panela elétrica garantem a sua proteção e a da sua família.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
+            <img class="w-10 md:w-14" src="./images/icons/chef_red.png" alt="Icon" />
+
+            <h1
+              class="mt-4 text-base font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
+              FUNÇÕES PRÉ- <br> PROGRAMADAS
+            </h1>
+            <p
+              class="mt-4 text-base font-light leading-5 text-center text-black font-inter">
+              As 10 funções pré-definidas alcançam resultados saborosos no preparo de receitas conhecidas.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-end w-full px-5 text-center md:mx-5 md:w-1/4">
+            <img class="w-10 md:w-14" src="./images/icons/arch_red.png" alt="Icon" />
+            <h1
+              class="mt-4 text-base font-bold leading-snug text-center text-black uppercase md:text-lg font-poppins">
+              PAINEL DIGITAL <br> COM TIMER
+            </h1>
+            <p
+              class="mt-4 text-base font-light leading-5 text-center text-black font-inter">
+              Tenha liberdade para definir o tempo de cozimento e programar o preparo das refeições.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-rows-2 mx-8 mt-40 md:grid-rows-1 gap-x-10 md:grid-cols-2">
+        <div>
+          <img src="./images/produto-com-alimento-dentro.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center -mt-10 md:mt-0">
+          <h1 class="mt-4 text-base font-bold leading-snug text-black uppercase md:text-4xl font-poppins">
+            SEGURANÇA E PRATICIDADE PARA COMIDAS MUITO MAIS SABOROSAS
+          </h1>
+          <p class="mt-4 text-base font-light leading-5 text-black font-inter">
+            Para você fazer suas receitas com confiança e muito sabor, combinamos praticidade e segurança em um só produto para mudar sua experiência culinária. 
+            <br><br>
+            Com grande capacidade, a panela elétrica é ideal para preparar alimentos de lenta cocção ou que exigem altas temperaturas.
+            <br><br>
+            São 3 níveis de cozimento para que você possa preparar receitas tamanho família com segurança. 
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col gap-2 mt-20 text-white md:mt-60 bg-black-default md:rounded-3xl">
+        <div class="grid grid-cols-2 gap-8">
+          <div class="relative z-10 mt-8 ml-8 space-y-6 md:mt-16 md:ml-20">
+            <h1 class="text-base font-bold uppercase md:w-[60%] md:text-3xl font-poppins">
+              DESCUBRA A REVOLUÇÃO CULINÁRIA COM A  AIRFRY OVEN DIGITAL
+            </h1>
+            <p
+              class="font-inter font-light tracking-tighter text-sm sm:text-base w-[200%] lg:w-[70%]">
+              A WAP combinou as funcionalidades das s air fryer com a
+              versatilidade dos fornos convencionais para mudar a forma como você cozinha
+              diariamente.
+            </p>
+            <p
+              class="font-inter font-light tracking-tighter text-sm sm:text-base w-[200%] lg:w-[70%]">
+              Com dois andares e temperatura ajustável de 30°C a 200°C, ela é escolha
+              ideal para preparar vários pratos, de uma só vez, para toda família.
+            </p>
+          </div>
+          <div class="relative flex items-start justify-start w-[120%]">
+            <img
+              class="absolute z-10 animation object-fill w-[2rem] md:w-[8rem] md:left-5 left-8 animate-float"
+              src="./images/effect_imgs/effect_img_2.png"
+              alt="Imagem de efeito" />
+            <img
+              class="absolute z-10 animation object-fill w-[2rem] hidden md:block -top-[6rem] md:top-10 md:w-[10rem] md:right-20 animate-float"
+              src="./images/effect_imgs/effect_img_4.png"
+              alt="Imagem de efeito" />
+            <img
+              class="absolute z-10 object-fill w-[5rem] animation top-3 md:-top-20 -left-16 md:-left-[12rem] md:w-[15rem] animate-float"
+              src="./images/effect_imgs/effect_img_1.png"
+              alt="Imagem de efeito" />
+            <img
+              class="absolute z-10 animation object-fill  right-[5rem] md:right-14 top-[5rem] w-[5rem] md:w-[15rem] animate-float"
+              src="./images/effect_imgs/effect_img_3.png"
+              alt="Imagem de efeito" />
+            <img
+              src="./images/produto_com_alimento.png"
+              class="mr-0 -translate-y-[2rem] w-[14rem] -translate-x-[2rem] sm:-translate-y-[2rem] md:-translate-y-[5rem] md:-translate-x-[8rem] md:mr-5 md:w-full"
+              alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="grid mx-5 mt-20 lg:mt-0 lg:ml-20 md:grid-cols-2">
+        <div class="flex flex-col md:gap-10 md:justify-center md:ml-0">
+          <div class="flex flex-col h-auto gap-3 mt-10 md:mt-0">
+            <img src="./images/icons/arch_red.png" alt="logo" class="w-10 md:w-14" />
+            <h1 class="font-black md:text-2xl text-black-default font-poppins">
+              10 FUNÇÕES <br />
+              PRÉ-PROGRAMADAS
+            </h1>
+            <p
+              class="text-base tracking-tighter text-black-default font-light font-inter lg:w-[80%] w-[70%]">
+              Com 10 funções pré-programadas, incluindo as receitas clássicas de air
+              fryer, mais a função reaquecer.
+            </p>
+          </div>
+
+          <!--Controler desktop-->
+          <div
+            class="hidden md:flex flex-col items-start justify-center h-[10rem] rounded-l-full bg-red-default">
+            <div class="flex flex-col gap-5 ml-20 text-white">
+              <div class="flex flex-col text-start">
+                <h2 class="text-2xl font-bold card-title"></h2>
+                <p class="text-base card-description font-poppins"></p>
+              </div>
+              <div class="flex items-center justify-center gap-5">
+                <p class="font-bold card-counter"></p>
+                <div
+                  class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer previous" style="background-image: url('./images/icons/left_sign.png')"></div>
+                <div
+                  class="w-10 h-10 bg-center bg-no-repeat bg-cover cursor-pointer next" style="background-image: url('./images/icons/right_sign.png')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Images do slider-->
+        <div
+          class="flex flex-col items-center justify-center w-full mt-10 lg:pb-20 sm:mt-20 md:mt-20 md:-ml-10">
+          <div
+            class="relative flex items-center justify-center h-full mr-5 md:mx-0 sm:mx-20">
+            <img src="./images/slider/background_image.png" class="" alt="" />
+            <img
+              alt="Imagens de alimentos"
+              id="card-image"
+              class="absolute z-10 px-2 mt-10 mb-10 transition-opacity duration-500 rounded-3xl" />
+          </div>
+        </div>
+        <!--Controler mobile-->
+        <div
+          class="grid items-center justify-center grid-cols-2 py-8 mt-10 text-white rounded-full md:hidden bg-red-default">
+          <div class="flex flex-col items-start justify-start h-full">
+            <h2
+              class="text-black font-poppins ml-5 text-lg card-title font-bold leading-[120.5%] uppercase"></h2>
+            <p class="ml-5 text-base card-description font-inter"></p>
+          </div>
+          <div class="flex items-center justify-center h-full mt-5">
+            <p class="mr-4 font-bold card-counter"></p>
+            <div
+              class="mr-2 bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 previous" style="background-image: url('./images/icons/left_sign.png')"></div>
+            <div
+              class="bg-center bg-no-repeat bg-cover cursor-pointer w-7 h-7 next" style="background-image: url('./images/icons/right_sign.png')"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center justify-center mx-5 mt-20">
+        <h1 class="w-11/12 text-xl font-bold md:text-4xl md:text-center font-poppins">
+          MAIS SEGURANÇA PARA COZINHAR
+        </h1>
+        <p class="w-11/12 mt-6 md:w-2/3 text-black-default md:text-center">
+          Você e sua família merecem aproveitar o melhor da culinária com confiança todos os dias. Para isso, a <b>Panela de Pressão Elétrica Prosdócimo WAP</b> garante proteção durante a utilização do aparelho, com 10 dispositivos de segurança. 
+        </p>
+      </section>
+
+      <section class="mt-10">
+        <img class="hidden cursor-text md:block" src="./images/dispositivos-de-seguranca-desktop.png" alt="">
+        <img class="cursor-text md:hidden" src="./images/dispositivos-de-seguranca-mobile.png" alt="">
+      </section>
+
+      <section class="mt-32">
+        <img class="hidden cursor-text md:block" src="./images/sessao-antiaderente-gray-stone-desktop.png" alt="">
+        <img class="cursor-text md:hidden" src="./images/sessao-antiaderente-gray-stone-mobile.png" alt="">
+      </section>
+
+      <section class="grid mt-32 ml-5 md:mx-0 lg:grid-cols-2">
+        <div class="flex flex-col md:px-0 md:mr-5 md:ml-20">
+          <h1 class="text-xl md:text-4xl -top-[1rem] font-extrabold font-poppins">
+            PREPARE AS <br class="hidden md:block" />
+            RECEITAS DO DIA A
+            DIA COM AGILIDADE
+          </h1>
+
+          <p class="mt-3 text-base w-[90%] font-light text-black font-inter md:mt-5">
+            Cozinhe mais rápido comida de verdade, como feijão, mandioca ou carne de panela com um clique. Ágil, a panela elétrica da WAP poupa tempo para facilitar a sua rotina.
+            <br/><br/>
+            A pressão uniforme sobre os ingredientes permite que o calor penetre nos alimentos de forma eficiente, os cozinhando mais rapidamente que as panelas convencionais.
+          </p>
+          <img
+            class="left-0 w-full mt-10 sm:hidden"
+            src="./images/fogaca_mao_na_cintura_fundo_vermelho_mobile.png"
+            alt="Henrique fogaça com a mão na cintura" />
+          <h1 class="hidden mt-16 text-2xl font-extrabold md:block font-poppins">
+            APRENDA AS RECEITAS DO <br>CHEF HENRIQUE FOGAÇA
+          </h1>
+          <h1 class="block mt-10 text-lg font-extrabold md:hidden font-poppins">
+            APRENDA AS RECEITAS DO <br>CHEF HENRIQUE FOGAÇA
+          </h1>
+          <p class="mt-3 text-base w-[90%] font-light text-black font-inter md:mt-5">
+            Vivencie experiências gastronômica únicas sem sair de casa, aprendendo as receitas do Chef Henrique Fogaça.
+            <br /><br />
+            Desde os ingredientes até o modo de preparo, Fogaça compartilhou pratos simples e deliciosos para despertar o chef que existe em você, com a linha cozinha da WAP.
+          </p>
+          <div class="mt-10">
+            <span
+              class="px-4 py-2 font-bold text-white rounded-md cursor-pointer font-poppins bg-red-default"
+              onclick="window.open('https://wap.ind.br/receitas', '_blank')">
+              ACESSE AS RECEITAS DA WAP
+            </span>
+          </div>
+        </div>
+        <img
+          class="w-[30rem] sm:block hidden sm:mt-0 mt-10 mx-auto"
+          src="./images/fogaca_mao_na_cintura_fundo_vermelho.png"
+          alt="Henrique fogaça com a mão na cintura" />
+      </section>
+
+      
+
+      <section class="grid m-auto mx-5 mt-40 lg:grid-cols-2">
+        <div class="flex flex-col items-center justify-center">
+          <img class="hidden md:block" src="./images/produto-de-frente-desktop.png" alt="">
+          <img class="md:hidden" src="./images/produto-de-frente-mobile.png" alt="">
+        </div>
+
+        <div
+          class="flex flex-col gap-[2.5rem] md:items-start  ml-5 md:mt-14 md:ml-20 lg:py-14 cards-section">
+          <div class="">
+            <img class="w-10 md:w-14" src="./images/icons/finger_touching_black.png" alt="" />
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">
+              PAINEL DIGITAL
+            </h1>
+            <p class="font-inter font-light w-[80%] md:w-[23rem] tracking-tighter mt-1">
+              Controle as funções da panela com facilidade e programe o início do preparo até 24 horas com antecedência.
+            </p>
+          </div>
+
+          <div>
+            <img
+              class="w-10 md:w-14"
+              src="./images/icons/arch_black.png"
+              alt="WAP AIRFRY FAMILY PROSDÓCIMO" />
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">
+              10 FUNÇÕES PRÉ-PROGRAMADAS
+            </h1>
+            <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
+              Alcance resultados saborosos em pratos tradicionais com a ajuda das funções pré-configuradas.
+            </p>
+          </div>
+
+          <div>
+            <img class="w-10 md:w-14" src="./images/icons/lock_black.png" alt="" />
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">MUITO MAIS SEGURA</h1>
+            <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
+              Foram desenvolvidos 10 dispositivos de segurança para garantir que você e sua família estejam sempre seguros. 
+            </p>
+          </div>
+
+          <div>
+            <img class="w-10 md:w-14" src="./images/icons/temperature_black.png" alt="" />
+            <h1 class="mt-3 font-bold md:text-2xl font-poppins">3 NÍVEIS DE COZIMENTO</h1>
+            <p class="font-inter w-[80%] md:w-[23rem] tracking-tighter font-light mt-1">
+              Ideal para alcançar o ponto de cozimento perfeito de diversos alimentos, desde vegetais até diferentes tipos de carne.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid m-auto lg:grid-cols-2">
+        <div
+          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 gap-y-20 ">
+          <div
+            class="flex flex-col items-center justify-center text-center lg:items-start card">
+
+            <img class="hidden w-10 md:w-14 md:block" src="./images/icons/light_black.png" alt="Icone lâmpada" />
+            <img class="w-10 md:w-14 md:hidden" src="./images/icons/light_red.png" alt="Icone lâmpada" />
+            <h1 class="w-full mt-5 font-bold uppercase md:text-start md:text-2xl text-black-default font-poppins">
+              SUA COZINHA DO SEU JEITO!
+            </h1>
+            <p
+              class="font-inter md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
+              Está na hora de transformar sua experiência culinária, e a parceira para isso acaba de chegar! 
+              <br><br>
+              A Panela de Pressão Elétrica Prosdócimo WAP é a escolha definitiva para quem busca preparar receitas saborosas com mais eficiência, segurança e versatilidade na cozinha.  
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center lg:items-start card">
+            <h1
+              class=" mt-5 font-bold uppercase md:text-start md:text-2xl md:w-[25rem] w-[20rem] text-black-default font-poppins">
+              Segurança para cozinhar e facilidade para preparar receitas saborosas.
+            </h1>
+    
+          </div>
+        </div>
+        <div class="lg:order-2">
+          <img
+            class="hidden mx-5 mt-20 lg:block"
+            src="./images/fogaca_sorrindo.png"
+            alt="Foto fogaça sorrindo" />
+          <img
+            class="px-5 mt-10 lg:hidden"
+            src="./images/fogaca_sorrindo_mobile.png"
+            alt="Foto fogaça sorrindo" />
+        </div>
+      </section>
+
+      <section
+        class="relative flex items-center justify-center pb-4 m-auto max-w-screen-2xl">
+        <img
+          class="object-fill lg:hidden"
+          src="./images/fogaca_na_cozinha_mobile.png"
+          alt="" />
+        <img
+          class="hidden object-fill mt-20 lg:block"
+          src="./images/fogaca_na_cozinha.png"
+          alt="" />
+      </section>
+    </div>
+  </main>
+  <script src="./javascript/slider.js"></script>
+</html>

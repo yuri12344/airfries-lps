@@ -844,6 +844,11 @@ video {
   height: 100%;
 }
 
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -927,6 +932,18 @@ video {
 
 .w-2\/3 {
   width: 66.666667%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .max-w-\[50\%\] {
@@ -1682,6 +1699,10 @@ video {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
   }
 
   .md\:justify-center {

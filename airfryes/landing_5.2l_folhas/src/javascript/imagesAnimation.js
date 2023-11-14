@@ -1,6 +1,6 @@
 // Listen for messages from the parent document
 window.addEventListener("message", function (event) {
-  // Extract the scrollY value sent from the parent
+  console.log("Message received from parent: ", event.data);
   const scrollY = event.data.scrollY;
 
   // Select the elements you want to animate

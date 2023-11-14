@@ -1,4 +1,4 @@
-const htmlContent = `<!doctype html>
+const htmlContent = `
 <!doctype html>
 <html lang="en">
   <head>
@@ -568,8 +568,11 @@ const htmlContent = `<!doctype html>
       </section>
     </div>
   </main>
-</html>
-
+  <script src="./javascript/imagesAnimation.js"></script>
+  <script src="./javascript/senders.js"></script>
+  <script src="./javascript/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  </html>
 
     `;
 let iframe = document.getElementById("product-iframe-page");

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -542,16 +542,8 @@ video {
   position: relative;
 }
 
-.-left-1\/2 {
-  left: -50%;
-}
-
 .-left-16 {
   left: -4rem;
-}
-
-.-right-\[7rem\] {
-  right: -7rem;
 }
 
 .-top-\[1rem\] {
@@ -709,10 +701,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-60 {
-  margin-top: 15rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -735,10 +723,6 @@ video {
 
 .h-10 {
   height: 2.5rem;
-}
-
-.h-12 {
-  height: 3rem;
 }
 
 .h-7 {
@@ -769,14 +753,6 @@ video {
   width: 91.666667%;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
 .w-7 {
   width: 1.75rem;
 }
@@ -785,16 +761,8 @@ video {
   width: 120%;
 }
 
-.w-\[12rem\] {
-  width: 12rem;
-}
-
 .w-\[14rem\] {
   width: 14rem;
-}
-
-.w-\[15rem\] {
-  width: 15rem;
 }
 
 .w-\[18rem\] {
@@ -1400,10 +1368,6 @@ video {
     width: 60%;
   }
 
-  .md\:w-\[75\%\] {
-    width: 75%;
-  }
-
   .md\:w-\[8rem\] {
     width: 8rem;
   }
@@ -1467,11 +1431,6 @@ video {
     padding-right: 0px;
   }
 
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1480,11 +1439,6 @@ video {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .md\:py-4 {
@@ -1636,11 +1590,6 @@ video {
     background-color: rgb(152 31 31 / var(--tw-bg-opacity));
   }
 
-  .lg\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
@@ -1673,11 +1622,6 @@ video {
   .lg\:text-black-black {
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-
-  .lg\:text-black-default {
-    --tw-text-opacity: 1;
-    color: rgb(29 29 27 / var(--tw-text-opacity));
   }
 
   .lg\:text-white {

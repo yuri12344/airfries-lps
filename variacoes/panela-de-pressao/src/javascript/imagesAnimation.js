@@ -10,7 +10,7 @@ function isRunningInIframe() {
 // Function to handle the animation based on the scrollY position
 function handleAnimation(scrollY) {
   const animatedElements = document.querySelectorAll(".animation");
-  const widerFactor = 10; // Adjust this value to control the range of movement
+  const widerFactor = 8; // Adjust this value to control the range of movement
 
   animatedElements.forEach((element, index) => {
     let newTransform;

@@ -125,14 +125,14 @@
       class="flex flex-col gap-2 pb-20 mt-20 text-white 60 bg-black-default md:rounded-3xl">
       <div class="relative grid grid-cols-2 gap-8">
         <img
-        class="absolute object-fill w-[5rem] md:translate-x-12 animation -top-16 left-0 md:-top-28 md:-left-[6rem] md:w-[15rem] animate-float"
+        class="absolute object-fill w-[5rem] md:translate-x-2 animation -top-16 left-0 md:-top-28 md:-left-[6rem] md:w-[15rem] animate-subtle"
         src="./images/effect_imgs/effect_img_1.png"
         alt="Imagem de efeito" />
-        <div class="relative z-10 flex flex-col w-[110%] items-center mt-20 ml-1  md:mt-40 md:ml-20">
+        <div class="relative z-10 flex flex-col w-[110%] items-center mt-20 ml-1 md:mt-40">
           <h1 class="uppercase text-4xl z-10 font-bold md:text-[3.5rem] leading-tight  font-poppins">
             6 LITROS
           </h1>
-          <p class="z-10 text-2xl font-light md:text-3xl font-poppins">
+          <p class="z-10 text-lg font-light md:text-3xl font-poppins">
             DE CAPACIDADE
           </p>
           <p
@@ -270,11 +270,28 @@
             <img class="" src="./images/product-inspect-desktop.png" alt="">
             <span id="span1" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-5 py-5  bottom-[21rem] left-[22%]">
               <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 right-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
-                <h1 class="text-xl font-bold md:text-2xl font-poppins"></h1> <!--Titulo e descricao e inserido dinamicamente pelo JS-->
-                <p class="tracking-tighter font-inter"></p>
+                <h1 class="text-2xl font-bold font-poppins">NÍVEL DE COZIMENTO</h1>
+                <p class="tracking-tighter font-inter">Selecione o nível de cozimento. Aperte essa função até indicar a opção desejada (Baixo, Médio ou Alto) no visor luminoso.</p>
               </div>
             </span>
-
+            <span id="span2" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class=" absolute rounded-full px-4 py-4  bottom-[17.5rem] left-[12.4rem]">
+              <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 right-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
+                <h1 class="text-2xl font-bold font-poppins">PROGRAMAR PREPARO</h1>
+                <p class="tracking-tighter font-inter">Cozinhe o seu alimento com o tempo programado de 10 minutos até 24 horas.</p>
+              </div>
+            </span>
+            <span id="span3" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class=" absolute rounded-full px-4 py-4  bottom-[17.5rem] left-[15.5rem]">
+              <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 right-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
+                <h1 class="text-2xl font-bold font-poppins">SELETOR DE TEMPO</h1>
+                <p class="tracking-tighter font-inter">Alteração do tempo de cocção na função manual ou nas demais funções pré-definidas.</p>
+              </div>
+            </span>
+            <span id="span4" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class=" absolute rounded-full px-4 py-4  bottom-[22.5rem] left-[16.5rem]">
+              <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 right-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
+                <h1 class="text-2xl font-bold font-poppins">MANTER AQUECIDO / CANCELAR</h1>
+                <p class="tracking-tighter font-inter">Cancele qualquer função programada ou mantenha seus alimentos na temperatura certa até serem servidos.</p>
+              </div>
+            </span>
           </div>
       </section>
 
@@ -308,7 +325,7 @@
         <img class="px-10" src="./images/produto-aberto.png" alt="">
       </div>
       
-      <section class="flex flex-col items-center -mt-16 lg:-mt-44 min-h-[40vh] pb-10 bg-black-default rounded-3xl">
+      <section class="flex flex-col items-center pb-10 -mt-16 lg:-mt-44 bg-black-default rounded-3xl">
         <img class="mt-20 md:hidden md:mt-40" src="./images/10-dispositivos-de-seguranca.png" alt="">
         <div class="grid grid-cols-2 grid-rows-1 mt-5 md:mt-56 md:grid-cols-3">
           <div class="flex-col items-end justify-end hidden md:flex md:border-r-2">

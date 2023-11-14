@@ -1,5 +1,4 @@
-const htmlContent = `
-<!DOCTYPE html>
+const htmlContent = `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" http-equiv="refresh" content="" />
@@ -51,7 +50,7 @@ const htmlContent = `
           alt="Henrique Fogaca apontando dedo para o produto" />
         <img
           src="./images/fogaca_apontando_dedo_mobile.png"
-          class="w-full m-auto md:hidden"
+          class="w-full px-8 m-auto md:hidden"
           alt="Henrique Fogaca apontando dedo para o produto" />
 
         <div
@@ -180,11 +179,11 @@ const htmlContent = `
         </div>
       </section>
 
-      <section class="grid mx-8 mt-16 md:mt-28 lg:mt-0 lg:ml-20 md:grid-cols-2">
+      <section class="grid mt-16 ml-8 md:mt-28 lg:mt-0 lg:ml-20 md:grid-cols-2">
         <div class="flex flex-col md:gap-10 md:justify-center md:ml-0">
           <div class="flex flex-col h-auto gap-3 mt-10 md:mt-0">
             <div
-              class="px-4 py-4 mb-5 text-2xl font-bold text-white rounded-md bg-red-default w-max">
+              class="px-4 py-3 mb-5 text-2xl font-bold text-white rounded-md bg-red-default w-max">
               12 EM 1
             </div>
             <h1
@@ -192,7 +191,7 @@ const htmlContent = `
               EXPLORE AO MÁXIMO SEU PODER NA COZINHA E IMPRESSIONE A FAMÍLIA TODA 
             </h1>
             <p
-              class="text-base opacity-80 tracking-tighter text-black-default font-light font-inter lg:w-[80%] md:w-[70%]">
+              class="text-sm opacity-80 tracking-tighter text-black-default font-light font-inter lg:w-[80%] md:w-[70%]">
               Você tem ideia de quantas delícias pode fazer com sua
               <b class="font-bold">WAP Fritadeira AirFry Barbecue Digital Prosdócimo?</b>
               Com 1700W de potência, um duplo sistema de aquecimento e tecnologia
@@ -225,21 +224,22 @@ const htmlContent = `
         <!--Images do slider-->
         <div
           class="flex flex-col items-center justify-center w-full mt-10 lg:pb-20 sm:mt-20 md:mt-20 md:-ml-10">
-          <div
-            class="relative flex items-end justify-end h-full mr-5 md:mx-0 sm:mx-20">
+          <div class="relative flex items-end justify-center h-full mr-5 md:mx-0">
             <img src="./images/slider/background_image.png" class="" alt="" />
             <img
               alt="Imagens de alimentos"
               id="card-image"
-              class="absolute z-10 px-2 mt-10 mb-10 transition-opacity duration-500 rounded-3xl" />
+              class="absolute z-10 px-2 transition-opacity duration-500 rounded-3xl" />
           </div>
         </div>
         <!--Controler mobile-->
         <div
-          class="flex flex-col items-center justify-center h-48 px-10 text-white rounded-full mt-14 md:hidden bg-red-default">
+          class="flex flex-col items-center justify-center h-48 px-8 text-white rounded-full mt-14 md:hidden bg-red-default">
           <div class="flex items-start justify-between w-full">
-            <h2
-              class="text-black font-poppins ml-5 card-title font-black leading-[120.5%] uppercase"></h2>
+            <div class="flex items-center h-full">
+              <h2
+                class="text-black font-poppins ml-5 card-title font-black leading-[120.5%] uppercase"></h2>
+            </div>
             <div class="flex items-center justify-center flex-shrink-0 w-max">
               <p class="mr-3 text-sm font-bold card-counter"></p>
               <div
@@ -256,7 +256,7 @@ const htmlContent = `
         </div>
       </section>
 
-      <section class="flex flex-col items-center justify-center mx-8 mt-28">
+      <section class="flex flex-col items-center justify-center mx-8 mt-20">
         <h1 class="text-xl font-black md:w-11/12 md:text-3xl md:text-center font-poppins">
           VERSATILIDADE PARA VOCÊ EXPLORAR<br class="hidden md:block" />
           TODAS AS POSSIBILIDADES
@@ -277,83 +277,104 @@ const htmlContent = `
           class="w-full mt-8 md:mt-16 md:hidden" />
       </section>
 
-      <section class="flex flex-col w-full mt-12 md:mt-48 md:flex-row">
+      <section class="flex flex-col w-full mt-6 lg:mt-48 lg:flex-row lg:px-4">
         <div
-          class="flex flex-col md:min-w-[50%] justify-center w-full md:w-1/2 px-8 py-8 md:py-48 rounded-full md:bg-red-default">
+          class="flex flex-col lg:min-w-[50%] justify-center w-full lg:w-1/2 px-8 lg:px-8 py-8 rounded-full lg:bg-red-default">
           <img
-            class="hidden w-12 h-12 md:block"
+            class="hidden w-12 h-12 lg:block"
             src="./images/icons/parts_icon.png"
             alt="Icone chefe" />
           <h1
-            class="mt-8 mb-4 text-xl font-black uppercase md:text-white md:text-4xl font-poppins">
+            class="mt-8 mb-4 text-xl font-black uppercase max-w-[80%] lg:text-white lg:text-4xl font-poppins">
             ACESSÓRIOS PARA VOCÊ FAZER DE TUDO
           </h1>
           <p
-            class="font-inter text-base tracking-tighter md:text-white w-full lg:w-[75%]">
+            class="font-inter text-base tracking-tighter lg:text-white w-full lg:w-[75%]">
             A <b class="font-bold">air fryer Barbecue</b> acompanha um refratário de
             alumínio fundido, tampa de vidro, cesto para fritura, grade para desidratar
             alimentos e uma escova de limpeza, transformando cada refeição em uma
             experiência única de sabor e praticidade.
           </p>
         </div>
-        <div class="hidden px-8 md:flex">
-          <img
-            src="./images/produto_partes.png"
-            alt=""
-            class="h-full px-4 w-max max-w-[50%] md:px-0 md:mr-8 md:-ml-32" />
-          <div class="flex flex-col justify-between pb-16 ml-4 md:pb-16 md:pt-4">
-            <div class="flex flex-col">
-              <h1 class="text-base font-black md:text-3xl font-poppins">GRELHA</h1>
-              <p class="text-xs leading-tight font-inter md:text-base">
-                Além de ser versátil, faz comidas no vapor e desidrata alimentos,
-                proporcionando sabor de dar água na boca.
-              </p>
+        <div class="flex px-8">
+          <div class="flex flex-col justify-between pb-16 lg:pb-16 lg:pt-4">
+            <div class="flex">
+              <img
+                src="./images/parte_produto5.png"
+                alt=""
+                class="flex-shrink-0 object-cover w-[40%] h-auto aspect-video lg:w-1/2 lg:-ml-44" />
+              <div class="flex flex-col justify-center ml-2 lg:ml-4">
+                <h1 class="text-sm font-bold md:text-3xl font-poppins">GRELHA</h1>
+                <p class="text-xs leading-tight font-inter md:text-base">
+                  Além de ser versátil, faz comidas no vapor e desidrata alimentos,
+                  proporcionando sabor de dar água na boca.
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <h1 class="text-base font-black md:text-3xl font-poppins">
-                CESTO PARA FRITURAS
-              </h1>
-              <p class="text-xs leading-tight font-inter md:text-base">
-                Parte fundamental da fritadeira elétrica air fryer, o cesto ajuda a
-                preparar receitas saudáveis e saborosas em grandes quantidades.  
-              </p>
+            <div class="flex mt-4 lg:mt-6">
+              <img
+                src="./images/parte_produto4.png"
+                alt=""
+                class="flex-shrink-0 object-cover w-[40%] h-auto aspect-video lg:w-1/2 lg:-ml-44" />
+              <div class="flex flex-col justify-center ml-2 lg:ml-4">
+                <h1 class="text-sm font-bold md:text-3xl font-poppins">
+                  CESTO PARA FRITURAS
+                </h1>
+                <p class="text-xs leading-tight font-inter md:text-base">
+                  Parte fundamental da fritadeira elétrica air fryer, o cesto ajuda a
+                  preparar receitas saudáveis e saborosas em grandes quantidades.  
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <h1 class="text-base font-black md:text-3xl font-poppins">
-                TAMPA DE VIDRO
-              </h1>
-              <p class="text-xs leading-tight font-inter md:text-base">
-                Colabora para a preparação rápida dos pratos, permitindo visualizar e
-                cozinhar à vapor.  
-              </p>
+            <div class="flex mt-4 lg:mt-6">
+              <img
+                src="./images/parte_produto3.png"
+                alt=""
+                class="flex-shrink-0 object-cover w-[40%] h-auto aspect-video lg:w-1/2 lg:-ml-44" />
+              <div class="flex flex-col justify-center ml-2 lg:ml-4">
+                <h1 class="text-sm font-bold leading-tight md:text-3xl font-poppins">TAMPA DE VIDRO</h1>
+                <p class="text-xs leading-tight font-inter md:text-base">
+                  Colabora para a preparação rápida dos pratos, permitindo visualizar e
+                  cozinhar à vapor.  
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <h1 class="text-base font-black leading-tight md:text-3xl font-poppins">
-                REFRATÁRIO DE ALUMÍNIO FUNDIDO
-              </h1>
-              <p class="text-xs leading-tight font-inter md:text-base">
-                Ideal para molhos, caldos grelhados e refogados. 
-              </p>
+            <div class="flex mt-4 lg:mt-6">
+              <img
+                src="./images/parte_produto2.png"
+                alt=""
+                class="flex-shrink-0 object-cover w-[40%] h-auto aspect-video lg:w-1/2 lg:-ml-44" />
+              <div class="flex flex-col justify-center ml-2 lg:ml-4">
+                <h1 class="text-base font-bold leading-tight md:text-3xl font-poppins">
+                  REFRATÁRIO DE ALUMÍNIO FUNDIDO
+                </h1>
+                <p class="text-xs leading-tight font-inter md:text-base">
+                  Ideal para molhos, caldos grelhados e refogados. 
+                </p>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <h1 class="text-base font-black md:text-3xl font-poppins">
-                ESCOVA DE LIMPEZA
-              </h1>
-              <p class="text-xs leading-tight font-inter md:text-base">
-                Ideal para remoção das sujeiras mais difíceis. 
-              </p>
+            <div class="flex mt-4 lg:-mt-6">
+              <img
+                src="./images/parte_produto.png"
+                alt=""
+                class="flex-shrink-0 object-cover aspect-[16/12] w-[40%] h-auto lg:w-1/2 lg:-ml-44" />
+              <div class="flex flex-col justify-center ml-2 lg:ml-4">
+                <h1 class="text-sm font-bold leading-tight md:text-3xl font-poppins">
+                  ESCOVA DE LIMPEZA
+                </h1>
+                <p class="mb-8 text-xs leading-tight lg:mb-16 font-inter md:text-base">
+                  Ideal para remoção das sujeiras mais difíceis. 
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <img class="px-5 md:hidden" src="./images/produto-partes-mobile.png" alt="">
         </div>
       </section>
 
       <section
-        class="relative flex flex-col mt-40 text-white bg-black-default md:rounded-3xl">
+        class="relative flex flex-col mt-32 text-white bg-black-default md:rounded-3xl">
         <div class="grid grid-cols-2 gap-4">
-          <div class="relative z-10 mx-8 mt-10 space-y-8 md:mt-20 md:ml-20">
+          <div class="relative z-10 mt-10 ml-8 space-y-8 md:mt-20 md:ml-20">
             <h1
               class="text-xl mt-8 md:mt-0 font-black uppercase md:w-[90%] md:text-4xl font-poppins">
               Experimente o sabor do churrasco quando quiser
@@ -382,7 +403,7 @@ const htmlContent = `
               src="./images/icons/icon_temperature_measure_white.png"
               alt="Icone chefe" />
             <h1
-              class="text-base leading-tight mt-4 mb-2 font-black uppercase md:w-[90%] md:text-2xl font-poppins">
+              class="text-sm leading-tight mt-4 mb-2 font-black uppercase md:w-[90%] md:text-2xl font-poppins">
               4 TEMPERATURAS PARA GRELHAR
             </h1>
             <p
@@ -398,11 +419,11 @@ const htmlContent = `
               src="./images/icons/icon_no_smoke_white.png"
               alt="Icone chefe" />
             <h1
-              class="text-base uppercase leading-tight mt-4 mb-2 font-black md:w-[90%] md:text-2xl font-poppins">
+              class="text-sm uppercase leading-tight mt-4 mb-2 font-black md:w-[90%] md:text-2xl font-poppins">
               tecnologia Smokless
             </h1>
             <p
-              class="font-inter opacity-80 text-sm md:text-base tracking-tighter w-[90%]">
+              class="font-inter opacity-80 text-xs md:text-base tracking-tighter w-[90%]">
               Tenha alimentos mais saborosos e com a textura perfeita, sem ter que se
               preocupar com a fumaça! Utilize a fritadeira air fryer em espaços fechados
               sem incômodo na cozinha.
@@ -520,7 +541,7 @@ const htmlContent = `
         <div class="flex flex-col pb-4 rounded-b-full md:ml-6 lg:bg-red-default">
           <div class="flex flex-col gap-6 mx-8 lg:m-auto md:justify-center">
             <h1
-              class="mt-32 text-2xl font-bold text-black md:pl-5 lg:text-white font-poppins">
+              class="mt-32 text-2xl font-black text-black md:pl-5 lg:text-white font-poppins">
               A REVOLUÇÃO NO MUNDO<br />
               DAS AIR FRYERS
             </h1>
@@ -576,55 +597,47 @@ const htmlContent = `
         </div>
       </section>
 
-      <section class="ml-5 lg:hidden">
-        <img src="./images/produto-aberto-mobile.png" alt="">
-      </section>
-
-      <section class="grid m-auto lg:grid-cols-2">
+      <section class="grid m-auto mt-16 lg:grid-cols-2">
         <div
-          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 gap-y-20 lg:bg-white md:bg-black-default">
+          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 gap-y-20 lg:bg-white">
           <div
-            class="flex flex-col-reverse justify-center md:text-center md:items-center md:flex-col lg:items-start card">
+            class="flex flex-col-reverse justify-center lg:text-center lg:flex-col lg:items-start card">
             <div
-              class="hidden px-8 py-2 mb-4 text-2xl font-bold text-white rounded-md md:block bg-red-default w-max">
+              class="hidden px-8 py-3 mb-4 ml-8 text-2xl font-bold text-white rounded-md lg:block bg-red-default w-max">
               12 EM 1
             </div>
-            <div class="flex flex-col items-center px-8 md:px-0">
+            <div class="flex flex-col px-8">
               <h1
-                class="w-full mt-6 text-xl font-black uppercase md:text-white md:text-2xl lg:text-black-default font-poppins">
+                class="w-full mt-6 text-xl font-black uppercase lg:text-2xl text-black-default font-poppins">
                 SUA COZINHA DO SEU JEITO!
               </h1>
               <p
-                class="font-inter md:text-white md:w-[25rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
+                class="font-inter max-w-[90%] lg:w-[25rem] font-light text-black-black tracking-tighter lg:text-start mt-3">
                 Com um visual sofisticado, capaz de transformar qualquer cozinha, a WAP
                 Fritadeira AirFry Barbecue Digital Prosdócimo possui painel digital com
                 interface moderna e intuitiva.
               </p>
               <p
-                class="font-inter md:text-white md:w-[25rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3">
+                class="font-inter max-w-[90%] lg:w-[25rem] font-light text-black-black tracking-tighter lg:text-start mt-3">
                 Ela desliga automaticamente e emite um aviso sonoro ao concluir o preparo
                 dos pratos, tornando sua rotina mais segura. 
               </p>
             </div>
             <img
-              class="left-0 w-full mt-10 ml-16 sm:hidden"
+              class="left-0 w-full mt-10 pl-16 max-w-[38rem] self-end lg:hidden"
               src="./images/produto_com_fundo.png"
               alt="Imagem do produto" />
             <p
-              class="md:w-[90%] w-2/3 px-8 text-xl font-black uppercase md:px-0 md:mt-20 md:text-white text-start md:text-2xl lg:text-black-default font-poppins">
+              class="md:w-[90%] w-4/5 pl-8 text-xl font-black uppercase md:mt-20 text-start md:text-2xl text-black-default font-poppins">
               SUA JORNADA PARA REFEIÇÕES SAUDÁVEIS, SABOROSAS E VERSÁTEIS ESTÁ PRESTES A
               COMEÇAR! 
             </p>
           </div>
         </div>
-        <div class="hidden lg:order-2 md:block">
+        <div class="hidden lg:order-2 lg:block">
           <img
-            class="hidden mx-5 mt-20 lg:block"
+            class="mx-5 mt-20"
             src="./images/fogaca_sorrindo.png"
-            alt="Foto fogaça sorrindo" />
-          <img
-            class="px-5 mt-10 lg:hidden"
-            src="./images/fogaca_sorrindo_mobile.png"
             alt="Foto fogaça sorrindo" />
         </div>
       </section>

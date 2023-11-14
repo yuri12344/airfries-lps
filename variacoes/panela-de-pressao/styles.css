@@ -1,6 +1,8 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
+@import "@fontsource/poppins"; /* Peso padrão 400 */
+@import "@fontsource/poppins/700.css"; /* Peso 700 */
 
 @layer utilities {
     .max-w-95 {

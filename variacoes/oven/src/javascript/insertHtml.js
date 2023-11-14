@@ -7,13 +7,11 @@ const htmlContent = `
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Fritadeira Elétrica Wap Airfry Family 4.1L</title>
+    <title>Fritadeira AirFry Oven</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/slider.css" />
     <link rel="stylesheet" href="styles/leafsAnimation.css" />
-    <!-- Link para o CSS do Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -27,7 +25,7 @@ const htmlContent = `
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
-  <main class="m-auto max-w-vtex">
+  <body class="m-auto max-w-vtex">
     <div class="overflow-x-hidden">
       <header class="flex flex-col items-center">
         <div class="w-full" x-data="{ showVideo: false }">
@@ -116,7 +114,7 @@ const htmlContent = `
               DESCUBRA A REVOLUÇÃO CULINÁRIA COM A FRITADEIRA AIRFRY OVEN DIGITAL
             </h1>
             <p
-              class="font-inter font-light tracking-tighter text-sm sm:text-base w-[200%] lg:w-[70%]">
+              class="font-inter font-light tracking-tighter text-sm sm:text-base pt-5 sm:pt-10 md:pt-20 lg:pt-0 w-[200%] lg:w-[70%]">
               A WAP combinou as funcionalidades das fritadeiras air fryer com a
               versatilidade dos fornos convencionais para mudar a forma como você cozinha
               diariamente.
@@ -256,15 +254,66 @@ const htmlContent = `
           class="w-full mt-16" />
       </section>
 
-      <section class="flex flex-col items-center justify-center mt-20 lg:mt-40">
-        <img
-          class="hidden md:block"
-          src="./images/mais_possibilidades_section_desktop.png"
-          alt="" />
-        <img
-          class="md:hidden"
-          src="./images/mais_possibilidades_section_mobile.png"
-          alt="" />
+      <!--Mais posibilidades desktop-->
+      <section class="hidden relative md:flex h-[40rem] flex-col items-center justify-center mt-[35rem] bg-black-default rounded-2xl">
+        <div class="relative absolute -translate-y-[25rem] w-[948px] h-[948px]">
+          <img src="./images/mais-possibilidades-sessao.png" class="absolute" alt="">
+          <div class="absolute w-[10rem] text-black left-[8.5rem] ">
+            <h1 class="text-2xl font-bold font-poppins">
+              PORTA REMOVÍVEL
+            </h1>
+            <p class="tracking-tighter font-inter">Para facilitar sua limpeza</p>
+          </div>
+          <div class="absolute w-[15rem] text-black left-[44rem] top-[9rem] ">
+            <h1 class="text-2xl font-bold font-poppins">
+              CESTO
+            </h1>
+            <p class="tracking-tighter font-inter">O cesto removível com 4,5 litros é perfeito para porções generosas.</p>
+          </div>
+          <div class="absolute text-white w-[15rem] text-black left-[4rem] text-end -bottom-[13rem]">
+            <h1 class="text-2xl font-bold font-poppins">
+              BANDEJA COLETORA
+            </h1>
+            <p class="tracking-tighter font-inter">A bandeja coletora de gordura assegura que suas refeições sejam tão saudáveis quanto deliciosas.</p>
+          </div>
+          <div class="absolute text-white w-[15rem] text-black right-[7rem] -bottom-[22rem]">
+            <h1 class="text-2xl font-bold font-poppins">
+              BANDEJA COLETORA
+            </h1>
+            <p class="tracking-tighter font-inter">A bandeja coletora de gordura assegura que suas refeições sejam tão saudáveis quanto deliciosas.</p>
+          </div>
+        </div>
+      </section>
+     
+      <!--Mais posibilidades mobile-->
+      <section class="md:hidden flex flex-col items-center justify-center mt-[20rem] bg-black-default rounded-2xl">
+        <div class="relative fle h-[320px] w-[25rem]">
+          <img class="absolute -translate-y-[12rem]" src="./images/mais-possibilidades-sessao-mobile.png" alt="">
+          <div class="absolute left-[3rem] -top-[13rem]">
+            <h1 class="text-lg font-bold font-poppins">
+              PORTA <br> REMOVÍVEL
+            </h1>
+            <p class="text-sm tracking-tighter font-inter">Para facilitar <br> sua limpeza.</p>
+          </div>
+          <div class="absolute text-end right-[3.5rem] -top-[13rem]">
+            <h1 class="text-lg font-bold font-poppins">
+              CESTO
+            </h1>
+            <p class="text-sm tracking-tighter font-inter">Cesto removível <br> com 4,5 litros..</p>
+          </div>
+          <div class="absolute text-white left-[13rem] bottom-[3rem]">
+            <h1 class="text-lg font-bold font-poppins">
+              BANDEJAS <br> ANTIADERENTE
+            </h1>
+            <p class="text-sm tracking-tighter font-inter">Cesto removível <br> com 4,5 litros..</p>
+          </div>
+          <div class="absolute text-white text-end right-[15.8rem] bottom-[3.5rem]">
+            <h1 class="text-lg font-bold font-poppins">
+              BANDEJA <br> COLETORA
+            </h1>
+            <p class="text-sm tracking-tighter font-inter">A bandeja coletora <br> de gordura assegura <br> que suas refeições <br> sejam tão saudáveis <br> quanto deliciosas.</p>
+          </div>
+        </div>
       </section>
 
       <section class="grid m-auto md:ml-10 lg:grid-cols-2">
@@ -275,9 +324,7 @@ const htmlContent = `
             src="./images/produto_para_esquerda.png"
             alt="Fritadeira airfry" />
         </div>
-
         <div
-
           class="flex flex-col gap-[2.5rem] md:items-start mt-10 justify-center items-center md:ml-28 md:mt-0 lg:py-14 cards-section">
           <div class="flex flex-col items-center justify-center mt-10 text-center md:text-start md:justify-start md:items-start">
             <img class="w-[3rem] md:hidden" src="./images/icons/bubble_red.png" alt="" />
@@ -508,10 +555,15 @@ const htmlContent = `
           alt="" />
       </section>
     </div>
-  </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  <script src="./javascript/imagesAnimation.js"></script>
+  <script src="./javascript/senders.js"></script>
+  <script src="./javascript/slider.js"></script>
 </html>
 
-    `;
+
+`;
 let iframe = document.getElementById("product-iframe-page");
 iframe.setAttribute("srcdoc", htmlContent);
     

@@ -7,7 +7,7 @@ function sendHeight() {
 document.addEventListener("DOMContentLoaded", sendHeight);
 
 // Update the height at an interval
-setInterval(sendHeight, 500);
+setInterval(sendHeight, 5000);
 
 // Optionally, update the height when the window is resized
 window.addEventListener("resize", sendHeight);

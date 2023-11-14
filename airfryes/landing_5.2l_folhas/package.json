@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fontsource/poppins": "^5.0.8",
     "init": "^0.1.2",
     "tailwindcss": "latest",
     "typeface-inter": "^3.18.1",

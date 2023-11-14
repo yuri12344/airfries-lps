@@ -1,6 +1,6 @@
 const htmlContent = `
 <!doctype html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" http-equiv="refresh" content="" />
     <meta
@@ -13,6 +13,9 @@ const htmlContent = `
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/slider.css" />
     <link rel="stylesheet" href="styles/leafsAnimation.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500"
@@ -22,7 +25,7 @@ const htmlContent = `
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
-  <main class="m-auto max-w-vtex">
+  <main class="m-auto max-w-vtex ">
     <div class="overflow-x-hidden">
       <header class="flex flex-col items-center">
         <div class="w-full" x-data="{ showVideo: false }">
@@ -163,7 +166,6 @@ const htmlContent = `
             />
           </div>
         </div>
-  
           <div
             class="z-50 flex flex-col items-start justify-start px-5 mx-2 text-white md:-mt-10 sm:mx-10 md:px-0 md:justify-center md:items-center gap-y-0 lg:flex-row lg:gap-x-40"
           >
@@ -184,31 +186,28 @@ const htmlContent = `
               </div>
             </div>
           </div>
-  
-    <!--Product capacities recipes -->
-    <div class="flex flex-wrap items-center w-full gap-10 px-2 mt-24 sm:px-10 md:mx-0 md:gap-2 md:flex-nowrap justify-evenly">
-      <div class="flex flex-col items-center justify-center w-40 h-48">
-        <img class="object-cover object-center w-40 h-48" src="./images/pão de queijo.png" alt="Pão de Queijo" />
-        <h1 class="text-white h-10 text-[0.9rem] text-center font-bold font-poppins">8 PÃES DE QUEIJO</h1>
-      </div>
-      <div class="flex flex-col items-center justify-center w-40 h-48">
-        <img class="object-cover object-center w-40 h-48" src="./images/hamburguer.png" alt="Hamburguer" />
-        <h1 class="text-white h-10 text-[0.9rem] text-center font-bold font-poppins">4 HAMBÚRGUERES</h1>
-      </div>
-      <div class="flex flex-col items-center justify-center w-40 h-48">
-        <img class="object-cover object-center w-40 h-48" src="./images/cupcake.png" alt="Cupcakes" />
-        <h1 class="text-white h-10 text-[0.9rem] text-center font-bold font-poppins">9 CUPCAKES</h1>
-      </div>
-      <div class="flex flex-col items-center justify-center w-40 h-48">
-        <img class="object-cover object-center w-40 h-48" src="./images/frango.png" alt="Coxinhas de Frango" />
-        <h1 class="text-white h-10 text-[0.9rem] text-center font-bold font-poppins">15 COXINHAS DE FRANGO</h1>
-      </div>
-      <div class="flex flex-col items-center justify-center w-40 h-48">
-        <img class="object-cover object-center w-40 h-48" src="./images/nuggets.png" alt="Nuggets" />
-        <h1 class="text-white h-10 text-[0.9rem] text-center font-bold font-poppins">18 NUGGETS</h1>
-      </div>
-    </div>
-  
+          <div class="flex flex-wrap items-start w-full gap-10 px-2 mt-24 justify-evenly sm:px-10 md:mx-0 md:gap-2">
+            <div class="flex flex-col items-center justify-start w-40 h-48">
+              <img class="object-cover w-40 h-44" src="./images/pão de queijo.png" alt="Pão de Queijo" />
+              <h1 class="mt-5 font-bold text-center text-white font-poppins">8 PÃES DE QUEIJO</h1>
+            </div>
+            <div class="flex flex-col items-center justify-start w-40 h-48">
+              <img class="object-cover w-40 h-44" src="./images/hamburguer.png" alt="Hamburguer" />
+              <h1 class="mt-5 font-bold text-center text-white font-poppins">4 HAMBÚRGUERES</h1>
+            </div>
+            <div class="flex flex-col items-center justify-start w-40 h-48">
+              <img class="object-cover w-40 h-44" src="./images/cupcake.png" alt="Cupcakes" />
+              <h1 class="mt-5 font-bold text-center text-white font-poppins">9 CUPCAKES</h1>
+            </div>
+            <div class="flex flex-col items-center justify-start w-40 h-48">
+              <img class="object-cover w-40 h-44" src="./images/frango.png" alt="Coxinhas de Frango" />
+              <h1 class="mt-5 font-bold text-center text-white font-poppins">15 COXINHAS DE FRANGO</h1>
+            </div>
+            <div class="flex flex-col items-center justify-start w-40 h-48">
+              <img class="object-cover w-40 h-44" src="./images/nuggets.png" alt="Nuggets" />
+              <h1 class="mt-5 font-bold text-center text-white font-poppins">18 NUGGETS</h1>
+            </div>
+          </div>
       </section>
 
       <section
@@ -241,7 +240,7 @@ const htmlContent = `
         ></div>
       </section>
 
-      <section class="grid ml-5 mt-14 md:mt-32 md:mx-0 lg:grid-cols-2">
+      <section class="grid ml-10 mt-14 md:mt-32 md:mx-0 lg:grid-cols-2">
         <div class="flex flex-col md:px-0 md:mr-5 md:ml-20">
           <h1 class="text-2xl -top-[1rem] font-extrabold font-poppins">
             FAÇA FRITURAS SEM <br />
@@ -294,53 +293,112 @@ const htmlContent = `
         />
       </section>
 
+    <!-- Alças removiaveis presentation section -->
+    <section class="m-auto mt-20 ml-10 md:ml-20 max-w-vtex mb-14 md:mb-48 md:mt-44">
+      <div class="flex-col inline-block font-poppins">
+        <span
+          class="px-2 py-1 lg:py-2 lg:text-[1.9rem] font-bold text-white rounded-md lg:rounded-lg bg-red-default"
+          >2 EM 1</span>
+        <p class="text-black font-light text-[1.47rem] lg:text-[2.18rem] mt-5">
+          ALÇA REMOVÍVEL
+        </p>
+        <h1
+          class="md:mt-5 font-extrabold text-black text-2xl md:text-[3.5rem]"
+        >
+          + POSSIBILIDADES
+        </h1>
+      </div>
+    </section>
 
+    <section class="mx-auto md:-mt-32">
+      <div class="flex justify-center -mb-16 overflow-hidden md:-mb-60">
+        <!--Desktop section-->
+        <div class="relative hidden object-contain max-w-full md:block md:h-full">
+          <div class="absolute left-[30%]">
+            <h1 class="text-2xl font-bold tracking-tight font-poppins">SÓ COM O CESTO</h1>
+            <p class="font-light text-[1.25rem] tracking-tighter font-inter">Prepare alimentos em <br>
+              grandes quantidades</p>
+          </div>
+          <img src="./images/so_com_cesto.png" alt="Fritadeira só com cesto" />
+        </div>
+        <div class="relative hidden object-contain max-w-full md:block md:h-full">
+          <div class="absolute left-[35%] ">
+            <h1 class="text-2xl font-bold font-poppins">SÓ COM A GRELHA</h1>
+            <p class="font-light text-[1.25rem] tracking-tighter font-inter">Muito mais espaço para <br>
+              preparar alimentos grandes</p>
+          </div>
+          <img
+            src="./images/so_com_grelha.png"
+            alt="Fritadeira só com grelha"
+          />
+        </div>
 
-      <section class="mx-auto mt-20">
-        <div class="hidden -mb-32 md:block mx-14">
-          <img src="./images/2_em_1_desktop.png" alt="">
-        </div>
-        <div class="block -mb-20 md:hidden mx-14">
-          <img src="./images/2_em_1_mobile.png" alt="">
-        </div>
-        <div class="flex items-start justify-center flex-1 gap-3 px-3 pt-24 pb-10 font-bold text-white md:px-0 md:pt-56 md:rounded-2xl bg-black-default flex-nowrap font-poppins">
-          <!-- Card 1 -->
-          <div class="flex flex-col items-center w-1/4 card">
-            <img src="./images/retire_o_cesto_do_recipiente.png" alt="Retire o cesto do recipiente" class="w-[180px] md:h-[190px] h-[140px]" />
-            <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
-              RETIRE O <br />
-              CESTO DO <br />
-              RECIPIENTE
+        <!--Mobile section, thanks God-->
+        <div class="relative overflow-hidden md:hidden">
+          <div class="relative overflow-hidden md:hidden">
+            <div class="absolute left-[30%] ">
+              <h1 class="text-lg font-bold font-poppins">SÓ COM O CESTO</h1>
+              <p class="text-base font-light tracking-tighter font-inter">Prepare alimentos em <br>
+                grandes quantidades</p>
             </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="flex flex-col items-center w-1/4 card">
-            <img src="./images/retire_o_cabo_do_cesto.png" alt="Retire o cabo do cesto" class="w-[180px] md:h-[190px] h-[140px]" />
-            <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
-              RETIRE O <br />
-              CABO DO <br />
-              CESTO
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="flex flex-col items-center w-1/4 card">
-            <img src="./images/coloque_o_cabo_no_recipiente.png" alt="Coloque o cabo no recipiente" class="w-[180px] md:h-[190px] h-[140px]" />
-            <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
-              COLOQUE O <br />
-              CABO NO <br />
-              RECIPIENTE
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="flex flex-col items-center w-1/4 card">
-            <img src="./images/coloque_a_grelha.png" alt="Coloque a grelha" class="w-[180px] md:h-[190px] h-[140px]" />
-            <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
-              COLOQUE <br />
-              A GRELHA
-            </div>
+            <img
+              class="object-contain -mr-5 w-80"
+              src="./images/so_com_cesto.png"
+              alt="Fritadeira só com grelha"
+            />
           </div>
         </div>
-      </section>
+        <div class="relative overflow-hidden md:hidden">
+          <div class="absolute left-[35%] ">
+            <h1 class="text-lg font-bold font-poppins">SÓ COM A GRELHA</h1>
+            <p class="text-base font-light tracking-tighter font-inter">Muito mais espaço para <br>
+              preparar alimentos grandes</p>
+          </div>
+          <img
+            class="object-contain -mr-5 w-80"
+            src="./images/so_com_grelha.png"
+            alt="Fritadeira só com grelha"
+          />
+        </div>
+      </div>
+      <div class="flex items-start justify-center flex-1 gap-3 px-3 pt-24 pb-10 font-bold text-white md:px-0 md:pt-56 md:rounded-2xl bg-black-default flex-nowrap font-poppins">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center w-1/4 card">
+          <img src="./images/retire_o_cesto_do_recipiente.png" alt="Retire o cesto do recipiente" class="w-[180px]  md:h-[190px] h-[100px]" />
+          <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
+            RETIRE O <br />
+            CESTO DO <br />
+            RECIPIENTE
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center w-1/4 card">
+          <img src="./images/retire_o_cabo_do_cesto.png" alt="Retire o cabo do cesto" class="w-[180px]  md:h-[190px] h-[100px]" />
+          <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
+            RETIRE O <br />
+            CABO DO <br />
+            CESTO
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center w-1/4 card">
+          <img src="./images/coloque_o_cabo_no_recipiente.png" alt="Coloque o cabo no recipiente" class="w-[180px]  md:h-[190px] h-[100px]" />
+          <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
+            COLOQUE O <br />
+            CABO NO <br />
+            RECIPIENTE
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center w-1/4 card">
+          <img src="./images/coloque_a_grelha.png" alt="Coloque a grelha" class="w-[180px]  md:h-[190px] h-[100px]" />
+          <div class="mt-5 text-[0.7rem] text-center md:text-sm whitespace-nowrap">
+            COLOQUE <br />
+            A GRELHA
+          </div>
+        </div>
+      </div>
+    </section>
 
       <section class="z-10 grid justify-center m-auto lg:grid-cols-2">
         <img
@@ -348,7 +406,6 @@ const htmlContent = `
           src="./images/produto_de_lado.png"
           alt="Frigideura gray stone"
         />
-
         <div
           class="flex flex-col justify-center h-full gap-20 pt-10 mx-5 text-center md:pl-10 lg:text-start font-poppins"
         >
@@ -406,7 +463,7 @@ const htmlContent = `
       <section class="grid m-auto -mt-5 md:mx-10 lg:grid-cols-2">
         <div class="flex flex-col pb-20 rounded-b-full lg:bg-red-default">
           <div
-            class="flex flex-col gap-8 mt-5 ml-5 lg:m-auto md:justify-center"
+            class="flex flex-col gap-8 mt-5 ml-10 lg:m-auto md:justify-center"
           >
             <h1
               class="mt-20 text-2xl font-bold text-black md:mt-40 md:pl-5 lg:text-white font-poppins"
@@ -428,7 +485,7 @@ const htmlContent = `
         </div>
 
         <div
-          class="flex flex-col gap-[2.5rem] items-start ml-5 md:ml-14 lg:mt-28 cards-section"
+          class="flex flex-col gap-[2.5rem] items-start ml-10 md:ml-14 lg:mt-28 cards-section"
         >
           <div class="">
             <img class="w-[3rem]" src="./images/icons/timer_icon.png" alt="" />
@@ -508,7 +565,7 @@ const htmlContent = `
               Desperte sua criatividade
             </h1>
             <p
-              class="font-inter text-white md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3"
+              class="font-inter text-white md:w-[25rem] w-[80%] font-light lg:text-black-black tracking-tighter lg:text-start mt-3"
             >
             Descubra um mundo de sabores, desde suculentas carnes, até saborosos pratos de salmão, verduras e legumes. E não para por aí! Explore também o lado doce da sua air  fryer com sobremesas como bolo de chocolate e muitas outras delícias.
             </p>
@@ -532,7 +589,7 @@ const htmlContent = `
             PREPARE GRELHADOS
           </h1>
           <p
-            class="font-inter text-white md:w-[25rem] w-[20rem] font-light lg:text-black-black tracking-tighter lg:text-start mt-3"
+            class="font-inter text-white md:w-[25rem] w-[80%] font-light lg:text-black-black tracking-tighter lg:text-start mt-3"
           >
             Descubra um mundo de sabores, desde suculentas carnes, até saborosos pratos de salmão, verduras e legumes. E não para por aí! Explore também o lado doce da sua air  fryer com sobremesas como bolo de chocolate e muitas outras delícias.
           </p>
@@ -573,7 +630,6 @@ const htmlContent = `
   <script src="./javascript/slider.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   </html>
-
-    `;
+`;
 let iframe = document.getElementById("product-iframe-page");
 iframe.setAttribute("srcdoc", htmlContent);

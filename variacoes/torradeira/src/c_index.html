@@ -110,7 +110,7 @@
               7 NÍVEIS DE
               <span class="text-lg tracking-widest font-extralight sm:text-[2.5rem]">TOSTAGEM</span>
             </h1>
-            <p class="font-inter opacity-80 text-sm tracking-tighter w-[200%] sm:w-[75%]">
+            <p class="font-inter text-sm tracking-tighter w-[200%] sm:w-[75%]">
               Com sete níveis de tostagem e acabamento em inox, a
               <b class="font-bold">Torradeira Elétrica Prosdócimo da WAP</b> combina
               design moderno à funcionalidade, tornando-a a escolha ideal para o seu
@@ -124,6 +124,14 @@
             </p>
           </div>
           <div class="flex items-start justify-end w-full ">
+            <img
+              src="./images/alimento.png"
+              class="absolute top-0 w-28 -translate-y-1/3 left-4 md:hidden"
+              alt="" />
+            <img
+              src="./images/alimento2.png"
+              class="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/4 w-36 md:hidden"
+              alt="" />
             <img
               src="./images/produto_com_alimento.png"
               class="mr-0 -translate-y-[3rem] w-full -translate-x-[1rem] md:-translate-y-[6rem] md:translate-x-[0rem] md:mr-14 md:w-full"
@@ -194,7 +202,7 @@
       </section>
 
       <!--Funcionalidade para sua rotina Desktop-->
-      <section class="hidden grid-cols-2 mt-64 md:grid bg-black-default">
+      <section class="hidden grid-cols-2 mt-64 h-96 md:grid bg-black-default">
         <div class="flex flex-col items-end justify-center mr-0 text-white ">
           <div class="mr-16 w-[70%] ">
             <h1 class="text-3xl font-bold font-poppins">FUNCIONALIDADE <br> PARA SUA ROTINA</h1>
@@ -202,14 +210,14 @@
           </div>
         </div>
         <div class="flex flex-col items-center justify-center w-full ">
-          <img src="./images/produto_cima.png" class="" style="transform: scale(1.5)" alt="">
+          <img src="./images/produto_cima.png" class="h-96" style="transform: scale(1.5)" alt="">
         </div>
       </section>
 
       <!--Funcionalidade para sua rotina Mobile-->
-      <section class="flex flex-col items-end pb-10 mt-20 md:hidden bg-black-default">
-        <div class="inline-block w-[30%] -mt-20 mr-12">
-          <img src="./images/produto_cima.png" class="-rotate-90" alt="">
+      <section class="flex flex-col items-end py-6 mt-20 md:hidden bg-black-default">
+        <div class="inline-block w-[30%] -mt-20 mr-6">
+          <img src="./images/produto_cima.png" class="w-11/12 -rotate-90" alt="">
         </div>
         <div class="inline-block -mt-20 mx-7">
           <h1 class="inline-block text-lg font-bold leading-tight text-white font-poppins">FUNCIONALIDADE <br> PARA SUA ROTINA</h1>
@@ -218,27 +226,30 @@
       </section>
       
       <!--Product inspect mobile-->
-      <section class="">
-        <div class="flex flex-col mt-10 md:hidden">
+      <section class="flex flex-col lg:hidden">
+        <div class="flex flex-col mt-20 md:mt-48">
           <div class="mx-10">
             <img src="./images/product-inspect-mobile.png" alt="">
           </div>
-          <div class="relative flex">
-            <div class="flex-none w-full p-4 px-12 rounded-lg shadow-lg h-44">
+          <div class="relative flex px-8 md:px-20">
+            <div class="flex-none w-full p-4 px-8 shadow-lg rounded-xl min-h-[10rem]">
               <h1 id="cardTitle" class="text-xl font-bold font-poppins">Título</h1>
               <p id="cardDescription">Descrição</p>
             </div>
-            <button class="absolute left-0 p-2 transform -translate-y-1/2 bg-white top-1/2" onclick="changeCard(-1)">&#10094;</button>
-            <button class="absolute right-0 p-2 transform -translate-y-1/2 bg-white top-1/2" onclick="changeCard(1)">&#10095;</button>
+            <button class="absolute flex items-center justify-center h-8 transform -translate-y-1/2 rounded-full bg-black-default bg-opacity-5 aspect-square md:left-16 left-4 top-1/2" onclick="changeCard(-1)">&#10094;</button>
+            <button class="absolute flex items-center justify-center h-8 transform -translate-y-1/2 rounded-full bg-black-default bg-opacity-5 aspect-square right-4 md:right-16 top-1/2" onclick="changeCard(1)">&#10095;</button>
           </div>
+        </div>
+        <div class="flex flex-col px-8 mt-16 md:px-20 justify-center w-[95%] gap-5 text-black-default">
+          <h1 class="text-xl w-[90%] font-bold font-poppins">CONHEÇA A TORRADEIRA ELÉTRICA PROSDÓCIMO WAP</h1>
+          <p class="w-[95%]">A <b class="font-bold">Torradeira Elétrica WAP</b> combina um design moderno com inúmeras funcionalidades, proporcionando segurança e praticidade. Além da bandeja coletora de migalhas, que mantém sua cozinha livre de sujeiras, o desligamento automático economiza energia e tempo, simplificando sua rotina.</p>
         </div>
       </section>
 
       <!--Product inspect desktop-->
-      <section class="grid mx-5 mt-10 md:mt-[12rem] lg:grid-cols-2 md:mx-20">
-        <div class="relative   flex flex-col md:w-[500px] md:h-[650px]">
+      <section class="hidden  lg:grid mx-5 mt-10 md:mt-[12rem] lg:grid-cols-2 md:mx-20">
+        <div class="relative flex flex-col md:w-[500px] md:h-[650px]">
           <!--Desktop product inspect-->
-          <div class="hidden border-2 md:border-red-300 md:block">
             <img class="" src="./images/product-inspect-desktop.png" alt="">
             <span id="span1" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4 bottom-[15rem] left-[9%]">
               <div class=" w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
@@ -276,17 +287,16 @@
                 <p class="tracking-tighter font-inter">A abertura extralarga permite que você prepare uma variedade de pães, seja ele francês ou fatiado, para torradas deliciosas.</p>
               </div>
             </span>
-          </div>
         </div>
         <div class="flex flex-col m-auto md:ml-20 justify-center w-[95%] gap-5 text-black-default">
-          <h1 class="md:text-4xl text-xl w-[90%] font-bold font-poppins">CONHEÇA A TORRADEIRA ELÉTRICA PROSDÓCIMO WAP</h1>
+          <h1 class="text-4xl w-[90%] font-bold font-poppins">CONHEÇA A TORRADEIRA ELÉTRICA PROSDÓCIMO WAP</h1>
           <p class="w-[95%]">A <b class="font-bold">Torradeira Elétrica WAP</b> combina um design moderno com inúmeras funcionalidades, proporcionando segurança e praticidade. Além da bandeja coletora de migalhas, que mantém sua cozinha livre de sujeiras, o desligamento automático economiza energia e tempo, simplificando sua rotina.</p>
         </div>
       </section>
 
-      <section class="grid m-auto md:-mt-20 lg:grid-cols-2">
+      <section class="grid m-auto lg:grid-cols-2">
         <div
-          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 md:items-start md:pl-20 gap-y-12">
+          class="flex flex-col items-center justify-center order-2 pt-20 pb-20 lg:items-start md:pl-20 gap-y-12">
           <div
             class="flex flex-col items-center justify-center text-center lg:items-start card">
             <img

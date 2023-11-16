@@ -220,7 +220,7 @@ const htmlContent = `
       
       <!--Product inspect mobile-->
       <section class="">
-        <div class="flex flex-col mt-10 lg:hidden">
+        <div class="flex flex-col mt-10 md:hidden">
           <div class="mx-10">
             <img src="./images/product-inspect-mobile.png" alt="">
           </div>
@@ -237,41 +237,41 @@ const htmlContent = `
 
       <!--Product inspect desktop-->
       <section class="grid mx-5 mt-10 md:mt-[12rem] lg:grid-cols-2 md:mx-20">
-        <div class="relative flex flex-col lg:w-[800px] lg:h-[750px]">
+        <div class="relative   flex flex-col md:w-[500px] md:h-[650px]">
           <!--Desktop product inspect-->
-          <div class="hidden lg:block">
+          <div class="hidden md:block">
             <img class="" src="./images/product-inspect-desktop.png" alt="">
-            <span id="span1" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-4 py-4  bottom-[21.4rem] left-[14.5%]">
+            <span id="span1" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4 bottom-[15rem] left-[9%]">
               <div class=" w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
                 <h1 class="text-2xl font-bold font-poppins">ESCOLHA A CROCÂNCIA PERFEITA</h1>
                 <p class="tracking-tighter font-inter">Com 7 níveis de tostagem, você tem o controle total sobre o ponto da sua torrada, garantindo que ela fique do jeito que você gosta.</p>
               </div>
             </span>
-            <span id="span2" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-4 py-4  bottom-[25.5rem] left-[9.9rem]">
+            <span id="span2" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4 bottom-[19rem] left-[16.5%]">
               <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
                 <h1 class="text-2xl font-bold font-poppins">CONTROLE TOTAL</h1>
                 <p class="tracking-tighter font-inter">A função ‘Cancelar’ permite que você interrompa o processo de tostagem a qualquer momento.</p>
               </div>
             </span>
-            <span id="span3" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-4 py-4 bottom-[28.3rem] left-[9.8rem]">
+            <span id="span3" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4 bottom-[21.9rem] left-[16.5%]">
               <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
                 <h1 class="text-2xl font-bold font-poppins">MANTENHA O SABOR</h1>
                 <p class="tracking-tighter font-inter">Com o modo ‘Reaquecer’, os pães do dia anterior continuam quentinhos, sem tostar, mantendo o sabor original.</p>
               </div>
             </span>
-            <span id="span4" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-4 py-4  bottom-[31rem] left-[9.8rem]">
+            <span id="span4" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4  bottom-[24.4rem] left-[16.5%]">
               <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
                 <h1 class="text-2xl font-bold font-poppins">TEXTURA ORIGINAL</h1>
                 <p class="tracking-tighter font-inter">No modo ‘Descongelar’, pães congelados se transformam em fatias torradas em questão de minutos.</p>
               </div>
             </span>
-            <span id="span5" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-4 py-4  bottom-[28.7rem] left-[13.4rem]">
+            <span id="span5" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4  bottom-[22.2rem] left-[28%]">
               <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
                 <h1 class="text-2xl font-bold font-poppins">ELEVAÇÃO AUTOMÁTICA</h1>
                 <p class="tracking-tighter font-inter">Suas fatias de pão são automaticamente elevadas quando atingem a tostagem desejada, garantindo segurança e praticidade.</p>
               </div>
             </span>
-            <span id="span6" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute rounded-full px-4 py-4  bottom-[33.9rem] left-[21.4rem]">
+            <span id="span6" onmouseover="productInspect(event)" onmouseout="hideInspect(event)" class="absolute  rounded-full px-4 py-4  bottom-[27.5rem] right-[39%]">
               <div class="w-[25rem] absolute rounded-lg p-4 hidden -bottom-10 left-[2.5rem] bg-white shadow-2xl py-5 px-5 text-black-default" id="infoBox">
                 <h1 class="text-2xl font-bold font-poppins">VERSATILIDADE NO PREPARO</h1>
                 <p class="tracking-tighter font-inter">A abertura extralarga permite que você prepare uma variedade de pães, seja ele francês ou fatiado, para torradas deliciosas.</p>
@@ -279,9 +279,9 @@ const htmlContent = `
             </span>
           </div>
         </div>
-        <div class="flex flex-col m-auto  md:ml-20 justify-center  w-[95%] gap-5 text-black-default">
+        <div class="flex flex-col m-auto md:ml-20 justify-center w-[95%] gap-5 text-black-default">
           <h1 class="md:text-4xl text-xl w-[90%] font-bold font-poppins">CONHEÇA A TORRADEIRA ELÉTRICA PROSDÓCIMO WAP</h1>
-          <p class="w-[90%]">A <b class="font-bold">Torradeira Elétrica WAP</b> combina um design moderno com inúmeras funcionalidades, proporcionando segurança e praticidade. Além da bandeja coletora de migalhas, que mantém sua cozinha livre de sujeiras, o desligamento automático economiza energia e tempo, simplificando sua rotina.</p>
+          <p class="w-[95%]">A <b class="font-bold">Torradeira Elétrica WAP</b> combina um design moderno com inúmeras funcionalidades, proporcionando segurança e praticidade. Além da bandeja coletora de migalhas, que mantém sua cozinha livre de sujeiras, o desligamento automático economiza energia e tempo, simplificando sua rotina.</p>
         </div>
       </section>
 

@@ -602,6 +602,18 @@ video {
   top: 5rem;
 }
 
+.left-\[25\%\] {
+  left: 25%;
+}
+
+.left-\[20\%\] {
+  left: 20%;
+}
+
+.left-\[15\%\] {
+  left: 15%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1134,6 +1146,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {

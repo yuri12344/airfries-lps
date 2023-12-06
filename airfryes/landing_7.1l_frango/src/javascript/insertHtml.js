@@ -325,27 +325,29 @@ const htmlContent = `
         <!--Mobile section, thanks God-->
         <div class="relative overflow-hidden md:hidden">
           <div class="relative overflow-hidden md:hidden">
-            <div class="absolute left-[30%] ">
-              <h1 class="text-lg font-bold font-poppins">SÓ COM O CESTO</h1>
-              <p class="text-base font-light tracking-tighter font-inter">Prepare alimentos em <br>
+            <div class="absolute left-[15%] ">
+              <h1 class="text-base font-bold font-poppins">SÓ COM O CESTO</h1>
+              <p class="text-base font-light tracking-tighter font-inter">
+                Prepare alimentos em
                 grandes quantidades</p>
             </div>
             <img
               class="object-contain -mr-5 w-80"
-              src="./images/so_com_cesto.png"
+              src="./images/so-com-cesto-mobile.png"
               alt="Fritadeira só com grelha"
             />
           </div>
         </div>
         <div class="relative overflow-hidden md:hidden">
-          <div class="absolute left-[35%] ">
-            <h1 class="text-lg font-bold font-poppins">SÓ COM A GRELHA</h1>
-            <p class="text-base font-light tracking-tighter font-inter">Muito mais espaço para <br>
-              preparar alimentos grandes</p>
+          <div class="absolute left-[25%] ">
+            <h1 class="text-base font-bold font-poppins">SÓ COM A GRELHA</h1>
+            <p class="text-sm font-light tracking-tighter font-inter">
+              Mais espaço para alimentos grandes
+            </p>
           </div>
           <img
             class="object-contain -mr-5 w-80"
-            src="./images/so_com_grelha.png"
+            src="./images/so-com-grelha-mobile.png"
             alt="Fritadeira só com grelha"
           />
         </div>
@@ -612,7 +614,6 @@ const htmlContent = `
   <script src="./javascript/slider.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 </html>
-
     `;
 let iframe = document.getElementById("product-iframe-page");
 iframe.setAttribute("srcdoc", htmlContent);
